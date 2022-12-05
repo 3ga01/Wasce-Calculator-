@@ -6,9 +6,14 @@ class Courses extends StatelessWidget {
   String grade;
   String school;
   String uMat;
+  String legon;
 
   // const Courses({super.key});
-  Courses({required this.grade, required this.school, required this.uMat});
+  Courses(
+      {required this.grade,
+      required this.school,
+      required this.uMat,
+      required this.legon});
 
   @override
   Widget build(BuildContext context) {
@@ -26,6 +31,7 @@ class Courses extends StatelessWidget {
                   school,
                 ),
                 Umat(grade, uMat),
+                Legon(grade, legon),
 
                 // Text("School: ${isChecked}"),
               ],
@@ -36,6 +42,7 @@ class Courses extends StatelessWidget {
     );
   }
 
+//Central University
   Container Result(String? grade1, String school1) {
     var g = int.parse(grade);
 
@@ -3271,6 +3278,7 @@ class Courses extends StatelessWidget {
     }
   }
 
+//Umat
   Container Umat(String? grade1, String umat) {
     var g = int.parse(grade);
 
@@ -4145,7 +4153,6 @@ class Courses extends StatelessWidget {
                                   children: [
                                     Column(
                                       children: [
-                                        
                                         Text(
                                           "Faculty of Geosciences & Environmental Studies",
                                           style: TextStyle(
@@ -4265,8 +4272,7 @@ class Courses extends StatelessWidget {
           ),
         ),
       );
-    }
-     else if ((g == 12 || g==13 || g== 14 || g == 15 ) && umat == "true") {
+    } else if ((g == 12 || g == 13 || g == 14 || g == 15) && umat == "true") {
       return Container(
         height: 400,
         width: double.infinity,
@@ -4426,8 +4432,7 @@ class Courses extends StatelessWidget {
           ),
         ),
       );
-    }
-      else if ((g <=24 ) && umat == "true") {
+    } else if ((g <= 24) && umat == "true") {
       return Container(
         height: 400,
         width: double.infinity,
@@ -4468,10 +4473,8 @@ class Courses extends StatelessWidget {
                                   children: [
                                     Column(
                                       children: [
-                                        
                                         Column(
                                           children: [
-                                         
                                             Text(
                                                 "B.Sc. Land Administration & Information Systems",
                                                 style: TextStyle(
@@ -4498,7 +4501,6 @@ class Courses extends StatelessWidget {
                                                 fontStyle: FontStyle.italic,
                                               ),
                                             ),
-                                         
                                           ],
                                         ),
                                         Text(
@@ -4538,6 +4540,3194 @@ class Courses extends StatelessWidget {
                                                   fontStyle: FontStyle.italic,
                                                 )),
                                           ],
+                                        ),
+                                      ],
+                                    ),
+                                  ],
+                                )),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+      );
+    } else {
+      return Container(
+        height: 20,
+        width: 50,
+      );
+    }
+  }
+
+  Container Legon(String? grade1, String legon) {
+    var g = int.parse(grade);
+
+    if (g <= 7 && legon == "true") {
+      return Container(
+        height: 450,
+        width: double.infinity,
+        child: Padding(
+          padding: const EdgeInsets.all(28.0),
+          child: Card(
+            child: Column(
+              children: [
+                Image.asset(
+                  "images/Legon.png",
+                  height: 100,
+                ),
+                Text(
+                  "Eligible Programmes",
+                  style: TextStyle(
+                    fontSize: 30,
+                    fontWeight: FontWeight.bold,
+                    color: Color.fromARGB(255, 19, 45, 110),
+                    letterSpacing: 2,
+                    wordSpacing: 8,
+                  ),
+                ),
+                Container(
+                  height: 250,
+                  width: double.infinity,
+                  child: ListView(
+                    children: [
+                      Column(
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.all(10),
+                            child: Container(
+                                height: 200,
+                                color: Colors.white,
+                                child: ListView(
+                                  children: [
+                                    Column(
+                                      children: [
+                                        Text(
+                                          "College of Basic & Applied Sciences",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 20,
+                                          ),
+                                        ),
+                                        Container(
+                                          height: 130,
+                                          child: ListView(
+                                            children: [
+                                              Column(
+                                                children: [
+                                                  Text(
+                                                    "BSc. Biological Sciences",
+                                                    style: TextStyle(
+                                                      fontSize: 17,
+                                                      color: Colors.blue,
+                                                      fontStyle:
+                                                          FontStyle.italic,
+                                                    ),
+                                                  ),
+                                                  Text("B.Sc Agriculture",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text("BSc. Earth Sciences",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BSc. Agricultural Engineering",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BSc. Biomedical Engineering",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BSc. Computer Engineering",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BSc. Food Process Engineering",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BSc. Materials Science & Engineerin",
+                                                      style: TextStyle(
+                                                        fontSize: 15,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BSc. Family & Child Studies",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text("BSc. Food & Clothing	",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BSc. Information Technology	",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BSc. Mathematical Sciences	",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BSc. Physical Sciences	",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "Doctor of Veterinary Medicine	",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text("BSc. Psychology",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                ],
+                                              ),
+                                            ],
+                                          ),
+                                        ),
+                                        Text(
+                                          "College of Health Sciences",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 20,
+                                          ),
+                                        ),
+                                        Container(
+                                          height: 130,
+                                          child: ListView(
+                                            children: [
+                                              Column(
+                                                children: [
+                                                  Text(
+                                                    "BSc. Nursing",
+                                                    style: TextStyle(
+                                                      fontSize: 17,
+                                                      color: Colors.blue,
+                                                      fontStyle:
+                                                          FontStyle.italic,
+                                                    ),
+                                                  ),
+                                                  Text(
+                                                      "Bachelor of Medicine and Bachelor of Surgery	",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "Bachelor of Dental Surgery	",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BSc. Medical Laboratory Sciences",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text("BSc. Physiotherapy	",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text("BSc. Dietetics	",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BSc. Occupational  Therapy	",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BSc. Diagnostic Radiography	",
+                                                      style: TextStyle(
+                                                        color: Colors.blue,
+                                                        fontSize: 15,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text("Doctor of Pharmacy	",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                ],
+                                              ),
+                                            ],
+                                          ),
+                                        ),
+                                        Text(
+                                          "College of Humanities",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 20,
+                                          ),
+                                        ),
+                                        Container(
+                                          // color: Colors.amber,
+                                          height: 130,
+                                          child: ListView(
+                                            children: [
+                                              Column(
+                                                children: [
+                                                  Text(
+                                                    "Bachelor of Laws ",
+                                                    style: TextStyle(
+                                                      fontSize: 17,
+                                                      color: Colors.blue,
+                                                      fontStyle:
+                                                          FontStyle.italic,
+                                                    ),
+                                                  ),
+                                                  Text("B.Sc. Administration ",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "B.Sc. Administration Fee-paying",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "B.Sc. Administration City Campus",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "Bachelor of Arts – General Arts Background",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "Bachelor of Arts – Fee-paying",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "Bachelor of Arts – Business/Science/Vocational Background",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "Bachelor of Arts – City Campus",
+                                                      style: TextStyle(
+                                                        color: Colors.blue,
+                                                        fontSize: 15,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text("Bachelor of Fine Arts",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                ],
+                                              ),
+                                            ],
+                                          ),
+                                        ),
+                                        Text(
+                                          "College of Education",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 20,
+                                          ),
+                                        ),
+                                        Container(
+                                          // color: Colors.amber,
+                                          height: 130,
+                                          child: ListView(
+                                            children: [
+                                              Column(
+                                                children: [
+                                                  Text(
+                                                    "Bachelor of Arts in Education",
+                                                    style: TextStyle(
+                                                      fontSize: 17,
+                                                      color: Colors.blue,
+                                                      fontStyle:
+                                                          FontStyle.italic,
+                                                    ),
+                                                  ),
+                                                  Text(
+                                                      "Bachelor of Science in Education",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "B.Ed. ( JHS Specialism)",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BA. Education (English)	",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BA. Sports and Physical Culture	",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BSc. Information Technology - Distance Education",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BSc. Administration - Distance Education	",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "Bachelor of Arts - Distance Education 	",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                ],
+                                              ),
+                                            ],
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ],
+                                )),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+      );
+    } else if (g <= 8 && legon == "true") {
+      return Container(
+        height: 450,
+        width: double.infinity,
+        child: Padding(
+          padding: const EdgeInsets.all(28.0),
+          child: Card(
+            child: Column(
+              children: [
+                Image.asset(
+                  "images/Legon.png",
+                  height: 100,
+                ),
+                Text(
+                  "Eligible Programmes",
+                  style: TextStyle(
+                    fontSize: 30,
+                    fontWeight: FontWeight.bold,
+                    color: Color.fromARGB(255, 19, 45, 110),
+                    letterSpacing: 2,
+                    wordSpacing: 8,
+                  ),
+                ),
+                Container(
+                  height: 250,
+                  width: double.infinity,
+                  child: ListView(
+                    children: [
+                      Column(
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.all(10),
+                            child: Container(
+                                height: 200,
+                                color: Colors.white,
+                                child: ListView(
+                                  children: [
+                                    Column(
+                                      children: [
+                                        Text(
+                                          "College of Basic & Applied Sciences",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 20,
+                                          ),
+                                        ),
+                                        Container(
+                                          height: 130,
+                                          child: ListView(
+                                            children: [
+                                              Column(
+                                                children: [
+                                                  Text(
+                                                    "BSc. Biological Sciences",
+                                                    style: TextStyle(
+                                                      fontSize: 17,
+                                                      color: Colors.blue,
+                                                      fontStyle:
+                                                          FontStyle.italic,
+                                                    ),
+                                                  ),
+                                                  Text("B.Sc Agriculture",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text("BSc. Earth Sciences",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BSc. Agricultural Engineering",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BSc. Biomedical Engineering",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BSc. Computer Engineering",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BSc. Food Process Engineering",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BSc. Materials Science & Engineerin",
+                                                      style: TextStyle(
+                                                        fontSize: 15,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BSc. Family & Child Studies",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text("BSc. Food & Clothing	",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BSc. Information Technology	",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BSc. Mathematical Sciences	",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BSc. Physical Sciences	",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "Doctor of Veterinary Medicine	",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text("BSc. Psychology",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                ],
+                                              ),
+                                            ],
+                                          ),
+                                        ),
+                                        Text(
+                                          "College of Health Sciences",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 20,
+                                          ),
+                                        ),
+                                        Container(
+                                          height: 130,
+                                          child: ListView(
+                                            children: [
+                                              Column(
+                                                children: [
+                                                  Text(
+                                                    "BSc. Nursing",
+                                                    style: TextStyle(
+                                                      fontSize: 17,
+                                                      color: Colors.blue,
+                                                      fontStyle:
+                                                          FontStyle.italic,
+                                                    ),
+                                                  ),
+                                                  Text(
+                                                      "Bachelor of Dental Surgery	",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BSc. Medical Laboratory Sciences",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text("BSc. Physiotherapy	",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text("BSc. Dietetics	",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BSc. Occupational  Therapy	",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BSc. Diagnostic Radiography	",
+                                                      style: TextStyle(
+                                                        color: Colors.blue,
+                                                        fontSize: 15,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text("Doctor of Pharmacy	",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                ],
+                                              ),
+                                            ],
+                                          ),
+                                        ),
+                                        Text(
+                                          "College of Humanities",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 20,
+                                          ),
+                                        ),
+                                        Container(
+                                          // color: Colors.amber,
+                                          height: 130,
+                                          child: ListView(
+                                            children: [
+                                              Column(
+                                                children: [
+                                                  Text("B.Sc. Administration ",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "B.Sc. Administration Fee-paying",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "B.Sc. Administration City Campus",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "Bachelor of Arts – General Arts Background",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "Bachelor of Arts – Fee-paying",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "Bachelor of Arts – Business/Science/Vocational Background",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "Bachelor of Arts – City Campus",
+                                                      style: TextStyle(
+                                                        color: Colors.blue,
+                                                        fontSize: 15,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text("Bachelor of Fine Arts",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                ],
+                                              ),
+                                            ],
+                                          ),
+                                        ),
+                                        Text(
+                                          "College of Education",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 20,
+                                          ),
+                                        ),
+                                        Container(
+                                          // color: Colors.amber,
+                                          height: 130,
+                                          child: ListView(
+                                            children: [
+                                              Column(
+                                                children: [
+                                                  Text(
+                                                    "Bachelor of Arts in Education",
+                                                    style: TextStyle(
+                                                      fontSize: 17,
+                                                      color: Colors.blue,
+                                                      fontStyle:
+                                                          FontStyle.italic,
+                                                    ),
+                                                  ),
+                                                  Text(
+                                                      "Bachelor of Science in Education",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "B.Ed. ( JHS Specialism)",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BA. Education (English)	",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BA. Sports and Physical Culture	",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BSc. Information Technology - Distance Education",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BSc. Administration - Distance Education	",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "Bachelor of Arts - Distance Education 	",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                ],
+                                              ),
+                                            ],
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ],
+                                )),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+      );
+    } else if ((g <= 10) && legon == "true") {
+      return Container(
+        height: 450,
+        width: double.infinity,
+        child: Padding(
+          padding: const EdgeInsets.all(28.0),
+          child: Card(
+            child: Column(
+              children: [
+                Image.asset(
+                  "images/Legon.png",
+                  height: 100,
+                ),
+                Text(
+                  "Eligible Programmes",
+                  style: TextStyle(
+                    fontSize: 30,
+                    fontWeight: FontWeight.bold,
+                    color: Color.fromARGB(255, 19, 45, 110),
+                    letterSpacing: 2,
+                    wordSpacing: 8,
+                  ),
+                ),
+                Container(
+                  height: 250,
+                  width: double.infinity,
+                  child: ListView(
+                    children: [
+                      Column(
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.all(10),
+                            child: Container(
+                                height: 200,
+                                color: Colors.white,
+                                child: ListView(
+                                  children: [
+                                    Column(
+                                      children: [
+                                        Text(
+                                          "College of Basic & Applied Sciences",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 20,
+                                          ),
+                                        ),
+                                        Container(
+                                          height: 130,
+                                          child: ListView(
+                                            children: [
+                                              Column(
+                                                children: [
+                                                  Text(
+                                                    "BSc. Biological Sciences",
+                                                    style: TextStyle(
+                                                      fontSize: 17,
+                                                      color: Colors.blue,
+                                                      fontStyle:
+                                                          FontStyle.italic,
+                                                    ),
+                                                  ),
+                                                  Text("B.Sc Agriculture",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text("BSc. Earth Sciences",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BSc. Agricultural Engineering",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BSc. Biomedical Engineering",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BSc. Food Process Engineering",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BSc. Materials Science & Engineerin",
+                                                      style: TextStyle(
+                                                        fontSize: 15,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BSc. Family & Child Studies",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text("BSc. Food & Clothing	",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BSc. Information Technology	",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BSc. Mathematical Sciences	",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BSc. Physical Sciences	",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "Doctor of Veterinary Medicine	",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text("BSc. Psychology",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                ],
+                                              ),
+                                            ],
+                                          ),
+                                        ),
+                                        Text(
+                                          "College of Health Sciences",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 20,
+                                          ),
+                                        ),
+                                        Container(
+                                          height: 130,
+                                          child: ListView(
+                                            children: [
+                                              Column(
+                                                children: [
+                                                  Text(
+                                                    "BSc. Nursing",
+                                                    style: TextStyle(
+                                                      fontSize: 17,
+                                                      color: Colors.blue,
+                                                      fontStyle:
+                                                          FontStyle.italic,
+                                                    ),
+                                                  ),
+                                                  Text(
+                                                      "Bachelor of Dental Surgery	",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BSc. Medical Laboratory Sciences",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text("BSc. Physiotherapy	",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text("BSc. Dietetics	",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BSc. Occupational  Therapy	",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BSc. Diagnostic Radiography	",
+                                                      style: TextStyle(
+                                                        color: Colors.blue,
+                                                        fontSize: 15,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                ],
+                                              ),
+                                            ],
+                                          ),
+                                        ),
+                                        Text(
+                                          "College of Humanities",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 20,
+                                          ),
+                                        ),
+                                        Container(
+                                          // color: Colors.amber,
+                                          height: 130,
+                                          child: ListView(
+                                            children: [
+                                              Column(
+                                                children: [
+                                                  Text("B.Sc. Administration ",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "B.Sc. Administration Fee-paying",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "B.Sc. Administration City Campus",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "Bachelor of Arts – General Arts Background",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "Bachelor of Arts – Fee-paying",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "Bachelor of Arts – Business/Science/Vocational Background",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "Bachelor of Arts – City Campus",
+                                                      style: TextStyle(
+                                                        color: Colors.blue,
+                                                        fontSize: 15,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text("Bachelor of Fine Arts",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                ],
+                                              ),
+                                            ],
+                                          ),
+                                        ),
+                                        Text(
+                                          "College of Education",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 20,
+                                          ),
+                                        ),
+                                        Container(
+                                          // color: Colors.amber,
+                                          height: 130,
+                                          child: ListView(
+                                            children: [
+                                              Column(
+                                                children: [
+                                                  Text(
+                                                    "Bachelor of Arts in Education",
+                                                    style: TextStyle(
+                                                      fontSize: 17,
+                                                      color: Colors.blue,
+                                                      fontStyle:
+                                                          FontStyle.italic,
+                                                    ),
+                                                  ),
+                                                  Text(
+                                                      "Bachelor of Science in Education",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "B.Ed. ( JHS Specialism)",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BA. Education (English)	",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BA. Sports and Physical Culture	",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BSc. Information Technology - Distance Education",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BSc. Administration - Distance Education	",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "Bachelor of Arts - Distance Education 	",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                ],
+                                              ),
+                                            ],
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ],
+                                )),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+      );
+    } else if ((g <= 12) && legon == "true") {
+      return Container(
+        height: 450,
+        width: double.infinity,
+        child: Padding(
+          padding: const EdgeInsets.all(28.0),
+          child: Card(
+            child: Column(
+              children: [
+                Image.asset(
+                  "images/Legon.png",
+                  height: 100,
+                ),
+                Text(
+                  "Eligible Programmes",
+                  style: TextStyle(
+                    fontSize: 30,
+                    fontWeight: FontWeight.bold,
+                    color: Color.fromARGB(255, 19, 45, 110),
+                    letterSpacing: 2,
+                    wordSpacing: 8,
+                  ),
+                ),
+                Container(
+                  height: 250,
+                  width: double.infinity,
+                  child: ListView(
+                    children: [
+                      Column(
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.all(10),
+                            child: Container(
+                                height: 200,
+                                color: Colors.white,
+                                child: ListView(
+                                  children: [
+                                    Column(
+                                      children: [
+                                        Text(
+                                          "College of Basic & Applied Sciences",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 20,
+                                          ),
+                                        ),
+                                        Container(
+                                          height: 130,
+                                          child: ListView(
+                                            children: [
+                                              Column(
+                                                children: [
+                                                  Text(
+                                                    "BSc. Biological Sciences",
+                                                    style: TextStyle(
+                                                      fontSize: 17,
+                                                      color: Colors.blue,
+                                                      fontStyle:
+                                                          FontStyle.italic,
+                                                    ),
+                                                  ),
+                                                  Text("B.Sc Agriculture",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text("BSc. Earth Sciences",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BSc. Agricultural Engineering",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BSc. Food Process Engineering",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BSc. Materials Science & Engineerin",
+                                                      style: TextStyle(
+                                                        fontSize: 15,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BSc. Family & Child Studies",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text("BSc. Food & Clothing	",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BSc. Information Technology	",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BSc. Mathematical Sciences	",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BSc. Physical Sciences	",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "Doctor of Veterinary Medicine	",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text("BSc. Psychology",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                ],
+                                              ),
+                                            ],
+                                          ),
+                                        ),
+                                        Text(
+                                          "College of Health Sciences",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 20,
+                                          ),
+                                        ),
+                                        Column(
+                                          children: [
+                                            Text(
+                                                "BSc. Medical Laboratory Sciences",
+                                                style: TextStyle(
+                                                  fontSize: 17,
+                                                  color: Colors.blue,
+                                                  fontStyle: FontStyle.italic,
+                                                )),
+                                            Text("BSc. Physiotherapy	",
+                                                style: TextStyle(
+                                                  fontSize: 17,
+                                                  color: Colors.blue,
+                                                  fontStyle: FontStyle.italic,
+                                                )),
+                                            Text("BSc. Dietetics	",
+                                                style: TextStyle(
+                                                  fontSize: 17,
+                                                  color: Colors.blue,
+                                                  fontStyle: FontStyle.italic,
+                                                )),
+                                            Text("BSc. Occupational  Therapy	",
+                                                style: TextStyle(
+                                                  fontSize: 17,
+                                                  color: Colors.blue,
+                                                  fontStyle: FontStyle.italic,
+                                                )),
+                                            Text("BSc. Diagnostic Radiography	",
+                                                style: TextStyle(
+                                                  color: Colors.blue,
+                                                  fontSize: 15,
+                                                  fontStyle: FontStyle.italic,
+                                                )),
+                                          ],
+                                        ),
+                                        Text(
+                                          "College of Humanities",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 20,
+                                          ),
+                                        ),
+                                        Container(
+                                          // color: Colors.amber,
+                                          height: 130,
+                                          child: ListView(
+                                            children: [
+                                              Column(
+                                                children: [
+                                                  Text("B.Sc. Administration ",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "B.Sc. Administration Fee-paying",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "B.Sc. Administration City Campus",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "Bachelor of Arts – General Arts Background",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "Bachelor of Arts – Fee-paying",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "Bachelor of Arts – Business/Science/Vocational Background",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "Bachelor of Arts – City Campus",
+                                                      style: TextStyle(
+                                                        color: Colors.blue,
+                                                        fontSize: 15,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text("Bachelor of Fine Arts",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                ],
+                                              ),
+                                            ],
+                                          ),
+                                        ),
+                                        Text(
+                                          "College of Education",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 20,
+                                          ),
+                                        ),
+                                        Container(
+                                          // color: Colors.amber,
+                                          height: 130,
+                                          child: ListView(
+                                            children: [
+                                              Column(
+                                                children: [
+                                                  Text(
+                                                    "Bachelor of Arts in Education",
+                                                    style: TextStyle(
+                                                      fontSize: 17,
+                                                      color: Colors.blue,
+                                                      fontStyle:
+                                                          FontStyle.italic,
+                                                    ),
+                                                  ),
+                                                  Text(
+                                                      "Bachelor of Science in Education",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "B.Ed. ( JHS Specialism)",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BA. Education (English)	",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BA. Sports and Physical Culture	",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BSc. Information Technology - Distance Education",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BSc. Administration - Distance Education	",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "Bachelor of Arts - Distance Education 	",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                ],
+                                              ),
+                                            ],
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ],
+                                )),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+      );
+    } else if ((g <= 15) && legon == "true") {
+      return Container(
+        height: 450,
+        width: double.infinity,
+        child: Padding(
+          padding: const EdgeInsets.all(28.0),
+          child: Card(
+            child: Column(
+              children: [
+                Image.asset(
+                  "images/Legon.png",
+                  height: 100,
+                ),
+                Text(
+                  "Eligible Programmes",
+                  style: TextStyle(
+                    fontSize: 30,
+                    fontWeight: FontWeight.bold,
+                    color: Color.fromARGB(255, 19, 45, 110),
+                    letterSpacing: 2,
+                    wordSpacing: 8,
+                  ),
+                ),
+                Container(
+                  height: 250,
+                  width: double.infinity,
+                  child: ListView(
+                    children: [
+                      Column(
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.all(10),
+                            child: Container(
+                                height: 200,
+                                color: Colors.white,
+                                child: ListView(
+                                  children: [
+                                    Column(
+                                      children: [
+                                        Text(
+                                          "College of Basic & Applied Sciences",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 20,
+                                          ),
+                                        ),
+                                        Container(
+                                          height: 130,
+                                          child: ListView(
+                                            children: [
+                                              Column(
+                                                children: [
+                                                  Text(
+                                                    "BSc. Biological Sciences",
+                                                    style: TextStyle(
+                                                      fontSize: 17,
+                                                      color: Colors.blue,
+                                                      fontStyle:
+                                                          FontStyle.italic,
+                                                    ),
+                                                  ),
+                                                  Text("B.Sc Agriculture",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text("BSc. Earth Sciences",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BSc. Agricultural Engineering",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BSc. Food Process Engineering",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BSc. Materials Science & Engineerin",
+                                                      style: TextStyle(
+                                                        fontSize: 15,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BSc. Family & Child Studies",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text("BSc. Food & Clothing	",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BSc. Information Technology	",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BSc. Mathematical Sciences	",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BSc. Physical Sciences	",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "Doctor of Veterinary Medicine	",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text("BSc. Psychology",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                ],
+                                              ),
+                                            ],
+                                          ),
+                                        ),
+                                        Text(
+                                          "College of Health Sciences",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 20,
+                                          ),
+                                        ),
+                                        Column(
+                                          children: [
+                                            Text("BSc. Physiotherapy	",
+                                                style: TextStyle(
+                                                  fontSize: 17,
+                                                  color: Colors.blue,
+                                                  fontStyle: FontStyle.italic,
+                                                )),
+                                            Text("BSc. Dietetics	",
+                                                style: TextStyle(
+                                                  fontSize: 17,
+                                                  color: Colors.blue,
+                                                  fontStyle: FontStyle.italic,
+                                                )),
+                                            Text("BSc. Occupational  Therapy	",
+                                                style: TextStyle(
+                                                  fontSize: 17,
+                                                  color: Colors.blue,
+                                                  fontStyle: FontStyle.italic,
+                                                )),
+                                            Text("BSc. Diagnostic Radiography	",
+                                                style: TextStyle(
+                                                  color: Colors.blue,
+                                                  fontSize: 15,
+                                                  fontStyle: FontStyle.italic,
+                                                )),
+                                          ],
+                                        ),
+                                        Text(
+                                          "College of Humanities",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 20,
+                                          ),
+                                        ),
+                                        Column(
+                                          children: [
+                                            Text(
+                                                "B.Sc. Administration Fee-paying",
+                                                style: TextStyle(
+                                                  fontSize: 17,
+                                                  color: Colors.blue,
+                                                  fontStyle: FontStyle.italic,
+                                                )),
+                                            Text(
+                                                "B.Sc. Administration City Campus",
+                                                style: TextStyle(
+                                                  fontSize: 17,
+                                                  color: Colors.blue,
+                                                  fontStyle: FontStyle.italic,
+                                                )),
+                                            Text(
+                                                "Bachelor of Arts – General Arts Background",
+                                                style: TextStyle(
+                                                  fontSize: 17,
+                                                  color: Colors.blue,
+                                                  fontStyle: FontStyle.italic,
+                                                )),
+                                            Text(
+                                                "Bachelor of Arts – Fee-paying",
+                                                style: TextStyle(
+                                                  fontSize: 17,
+                                                  color: Colors.blue,
+                                                  fontStyle: FontStyle.italic,
+                                                )),
+                                            Text(
+                                                "Bachelor of Arts – City Campus",
+                                                style: TextStyle(
+                                                  color: Colors.blue,
+                                                  fontSize: 15,
+                                                  fontStyle: FontStyle.italic,
+                                                )),
+                                            Text("Bachelor of Fine Arts",
+                                                style: TextStyle(
+                                                  fontSize: 17,
+                                                  color: Colors.blue,
+                                                  fontStyle: FontStyle.italic,
+                                                )),
+                                          ],
+                                        ),
+                                        Text(
+                                          "College of Education",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 20,
+                                          ),
+                                        ),
+                                        Container(
+                                          // color: Colors.amber,
+                                          height: 130,
+                                          child: ListView(
+                                            children: [
+                                              Column(
+                                                children: [
+                                                  Text(
+                                                    "Bachelor of Arts in Education",
+                                                    style: TextStyle(
+                                                      fontSize: 17,
+                                                      color: Colors.blue,
+                                                      fontStyle:
+                                                          FontStyle.italic,
+                                                    ),
+                                                  ),
+                                                  Text(
+                                                      "Bachelor of Science in Education",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "B.Ed. ( JHS Specialism)",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BA. Education (English)	",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BA. Sports and Physical Culture	",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BSc. Information Technology - Distance Education",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BSc. Administration - Distance Education	",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "Bachelor of Arts - Distance Education 	",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                ],
+                                              ),
+                                            ],
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ],
+                                )),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+      );
+    } else if ((g <= 18) && legon == "true") {
+      return Container(
+        height: 450,
+        width: double.infinity,
+        child: Padding(
+          padding: const EdgeInsets.all(28.0),
+          child: Card(
+            child: Column(
+              children: [
+                Image.asset(
+                  "images/Legon.png",
+                  height: 100,
+                ),
+                Text(
+                  "Eligible Programmes",
+                  style: TextStyle(
+                    fontSize: 30,
+                    fontWeight: FontWeight.bold,
+                    color: Color.fromARGB(255, 19, 45, 110),
+                    letterSpacing: 2,
+                    wordSpacing: 8,
+                  ),
+                ),
+                Container(
+                  height: 250,
+                  width: double.infinity,
+                  child: ListView(
+                    children: [
+                      Column(
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.all(10),
+                            child: Container(
+                                height: 200,
+                                color: Colors.white,
+                                child: ListView(
+                                  children: [
+                                    Column(
+                                      children: [
+                                        Text(
+                                          "College of Basic & Applied Sciences",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 20,
+                                          ),
+                                        ),
+                                        Container(
+                                          height: 130,
+                                          child: ListView(
+                                            children: [
+                                              Column(
+                                                children: [
+                                                  Text(
+                                                    "BSc. Biological Sciences",
+                                                    style: TextStyle(
+                                                      fontSize: 17,
+                                                      color: Colors.blue,
+                                                      fontStyle:
+                                                          FontStyle.italic,
+                                                    ),
+                                                  ),
+                                                  Text("B.Sc Agriculture",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text("BSc. Earth Sciences",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BSc. Agricultural Engineering",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BSc. Food Process Engineering",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BSc. Materials Science & Engineerin",
+                                                      style: TextStyle(
+                                                        fontSize: 15,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BSc. Family & Child Studies",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text("BSc. Food & Clothing	",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BSc. Information Technology	",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BSc. Mathematical Sciences	",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BSc. Physical Sciences	",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text("BSc. Psychology",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                ],
+                                              ),
+                                            ],
+                                          ),
+                                        ),
+                                        Text(
+                                          "College of Health Sciences",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 20,
+                                          ),
+                                        ),
+                                        Column(
+                                          children: [
+                                            Text("BSc. Occupational  Therapy	",
+                                                style: TextStyle(
+                                                  fontSize: 17,
+                                                  color: Colors.blue,
+                                                  fontStyle: FontStyle.italic,
+                                                )),
+                                          ],
+                                        ),
+                                        Text(
+                                          "College of Humanities",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 20,
+                                          ),
+                                        ),
+                                        Column(
+                                          children: [
+                                            Text(
+                                                "B.Sc. Administration City Campus",
+                                                style: TextStyle(
+                                                  fontSize: 17,
+                                                  color: Colors.blue,
+                                                  fontStyle: FontStyle.italic,
+                                                )),
+                                            Text(
+                                                "Bachelor of Arts – General Arts Background",
+                                                style: TextStyle(
+                                                  fontSize: 17,
+                                                  color: Colors.blue,
+                                                  fontStyle: FontStyle.italic,
+                                                )),
+                                            Text(
+                                                "Bachelor of Arts – Fee-paying",
+                                                style: TextStyle(
+                                                  fontSize: 17,
+                                                  color: Colors.blue,
+                                                  fontStyle: FontStyle.italic,
+                                                )),
+                                            Text(
+                                                "Bachelor of Arts – City Campus",
+                                                style: TextStyle(
+                                                  color: Colors.blue,
+                                                  fontSize: 15,
+                                                  fontStyle: FontStyle.italic,
+                                                )),
+                                            Text("Bachelor of Fine Arts",
+                                                style: TextStyle(
+                                                  fontSize: 17,
+                                                  color: Colors.blue,
+                                                  fontStyle: FontStyle.italic,
+                                                )),
+                                          ],
+                                        ),
+                                        Text(
+                                          "College of Education",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 20,
+                                          ),
+                                        ),
+                                        Container(
+                                          // color: Colors.amber,
+                                          height: 130,
+                                          child: ListView(
+                                            children: [
+                                              Column(
+                                                children: [
+                                                  Text(
+                                                    "Bachelor of Arts in Education",
+                                                    style: TextStyle(
+                                                      fontSize: 17,
+                                                      color: Colors.blue,
+                                                      fontStyle:
+                                                          FontStyle.italic,
+                                                    ),
+                                                  ),
+                                                  Text(
+                                                      "Bachelor of Science in Education",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "B.Ed. ( JHS Specialism)",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BA. Education (English)	",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BA. Sports and Physical Culture	",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BSc. Information Technology - Distance Education",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BSc. Administration - Distance Education	",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "Bachelor of Arts - Distance Education 	",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                ],
+                                              ),
+                                            ],
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ],
+                                )),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+      );
+    } else if ((g <= 22) && legon == "true") {
+      return Container(
+        height: 450,
+        width: double.infinity,
+        child: Padding(
+          padding: const EdgeInsets.all(28.0),
+          child: Card(
+            child: Column(
+              children: [
+                Image.asset(
+                  "images/Legon.png",
+                  height: 100,
+                ),
+                Text(
+                  "Eligible Programmes",
+                  style: TextStyle(
+                    fontSize: 30,
+                    fontWeight: FontWeight.bold,
+                    color: Color.fromARGB(255, 19, 45, 110),
+                    letterSpacing: 2,
+                    wordSpacing: 8,
+                  ),
+                ),
+                Container(
+                  height: 250,
+                  width: double.infinity,
+                  child: ListView(
+                    children: [
+                      Column(
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.all(10),
+                            child: Container(
+                                height: 200,
+                                color: Colors.white,
+                                child: ListView(
+                                  children: [
+                                    Column(
+                                      children: [
+                                        Text(
+                                          "College of Basic & Applied Sciences",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 20,
+                                          ),
+                                        ),
+                                        Container(
+                                          height: 130,
+                                          child: ListView(
+                                            children: [
+                                              Column(
+                                                children: [
+                                                  Text(
+                                                    "BSc. Biological Sciences",
+                                                    style: TextStyle(
+                                                      fontSize: 17,
+                                                      color: Colors.blue,
+                                                      fontStyle:
+                                                          FontStyle.italic,
+                                                    ),
+                                                  ),
+                                                  Text("B.Sc Agriculture",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text("BSc. Earth Sciences",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BSc. Agricultural Engineering",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BSc. Family & Child Studies",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text("BSc. Food & Clothing	",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BSc. Information Technology	",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BSc. Physical Sciences	",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text("BSc. Psychology",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                ],
+                                              ),
+                                            ],
+                                          ),
+                                        ),
+                                        Column(
+                                          children: [],
+                                        ),
+                                        Text(
+                                          "College of Humanities",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 20,
+                                          ),
+                                        ),
+                                        Column(
+                                          children: [
+                                            Text(
+                                                "B.Sc. Administration City Campus",
+                                                style: TextStyle(
+                                                  fontSize: 17,
+                                                  color: Colors.blue,
+                                                  fontStyle: FontStyle.italic,
+                                                )),
+                                            Text(
+                                                "Bachelor of Arts – General Arts Background",
+                                                style: TextStyle(
+                                                  fontSize: 17,
+                                                  color: Colors.blue,
+                                                  fontStyle: FontStyle.italic,
+                                                )),
+                                            Text(
+                                                "Bachelor of Arts – Fee-paying",
+                                                style: TextStyle(
+                                                  fontSize: 17,
+                                                  color: Colors.blue,
+                                                  fontStyle: FontStyle.italic,
+                                                )),
+                                            Text(
+                                                "Bachelor of Arts – City Campus",
+                                                style: TextStyle(
+                                                  color: Colors.blue,
+                                                  fontSize: 15,
+                                                  fontStyle: FontStyle.italic,
+                                                )),
+                                            Text("Bachelor of Fine Arts",
+                                                style: TextStyle(
+                                                  fontSize: 17,
+                                                  color: Colors.blue,
+                                                  fontStyle: FontStyle.italic,
+                                                )),
+                                          ],
+                                        ),
+                                        Text(
+                                          "College of Education",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 20,
+                                          ),
+                                        ),
+                                        Container(
+                                          // color: Colors.amber,
+                                          height: 130,
+                                          child: ListView(
+                                            children: [
+                                              Column(
+                                                children: [
+                                                  Text(
+                                                    "Bachelor of Arts in Education",
+                                                    style: TextStyle(
+                                                      fontSize: 17,
+                                                      color: Colors.blue,
+                                                      fontStyle:
+                                                          FontStyle.italic,
+                                                    ),
+                                                  ),
+                                                  Text(
+                                                      "Bachelor of Science in Education",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "B.Ed. ( JHS Specialism)",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BA. Education (English)	",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BA. Sports and Physical Culture	",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BSc. Information Technology - Distance Education",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BSc. Administration - Distance Education	",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "Bachelor of Arts - Distance Education 	",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                ],
+                                              ),
+                                            ],
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ],
+                                )),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+      );
+    } else if ((g <= 26) && legon == "true") {
+      return Container(
+        height: 450,
+        width: double.infinity,
+        child: Padding(
+          padding: const EdgeInsets.all(28.0),
+          child: Card(
+            child: Column(
+              children: [
+                Image.asset(
+                  "images/Legon.png",
+                  height: 100,
+                ),
+                Text(
+                  "Eligible Programmes",
+                  style: TextStyle(
+                    fontSize: 30,
+                    fontWeight: FontWeight.bold,
+                    color: Color.fromARGB(255, 19, 45, 110),
+                    letterSpacing: 2,
+                    wordSpacing: 8,
+                  ),
+                ),
+                Container(
+                  height: 250,
+                  width: double.infinity,
+                  child: ListView(
+                    children: [
+                      Column(
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.all(10),
+                            child: Container(
+                                height: 200,
+                                color: Colors.white,
+                                child: ListView(
+                                  children: [
+                                    Column(
+                                      children: [
+                                        Text(
+                                          "College of Basic & Applied Sciences",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 20,
+                                          ),
+                                        ),
+                                        Container(
+                                          height: 130,
+                                          child: ListView(
+                                            children: [
+                                              Column(
+                                                children: [
+                                                  Text(
+                                                    "BSc. Biological Sciences",
+                                                    style: TextStyle(
+                                                      fontSize: 17,
+                                                      color: Colors.blue,
+                                                      fontStyle:
+                                                          FontStyle.italic,
+                                                    ),
+                                                  ),
+                                                  Text("BSc. Earth Sciences",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BSc. Agricultural Engineering",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BSc. Family & Child Studies",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BSc. Physical Sciences	",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text("BSc. Psychology",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                ],
+                                              ),
+                                            ],
+                                          ),
+                                        ),
+                                        Column(
+                                          children: [],
+                                        ),
+                                        Text(
+                                          "College of Humanities",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 20,
+                                          ),
+                                        ),
+                                        Column(
+                                          children: [
+                                            Text(
+                                                "B.Sc. Administration City Campus",
+                                                style: TextStyle(
+                                                  fontSize: 17,
+                                                  color: Colors.blue,
+                                                  fontStyle: FontStyle.italic,
+                                                )),
+                                            Text(
+                                                "Bachelor of Arts – General Arts Background",
+                                                style: TextStyle(
+                                                  fontSize: 17,
+                                                  color: Colors.blue,
+                                                  fontStyle: FontStyle.italic,
+                                                )),
+                                            Text(
+                                                "Bachelor of Arts – Fee-paying",
+                                                style: TextStyle(
+                                                  fontSize: 17,
+                                                  color: Colors.blue,
+                                                  fontStyle: FontStyle.italic,
+                                                )),
+                                            Text(
+                                                "Bachelor of Arts – City Campus",
+                                                style: TextStyle(
+                                                  color: Colors.blue,
+                                                  fontSize: 15,
+                                                  fontStyle: FontStyle.italic,
+                                                )),
+                                            Text("Bachelor of Fine Arts",
+                                                style: TextStyle(
+                                                  fontSize: 17,
+                                                  color: Colors.blue,
+                                                  fontStyle: FontStyle.italic,
+                                                )),
+                                          ],
+                                        ),
+                                        Text(
+                                          "College of Education",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 20,
+                                          ),
+                                        ),
+                                        Container(
+                                          // color: Colors.amber,
+                                          height: 130,
+                                          child: ListView(
+                                            children: [
+                                              Column(
+                                                children: [
+                                                  Text(
+                                                    "Bachelor of Arts in Education",
+                                                    style: TextStyle(
+                                                      fontSize: 17,
+                                                      color: Colors.blue,
+                                                      fontStyle:
+                                                          FontStyle.italic,
+                                                    ),
+                                                  ),
+                                                  Text(
+                                                      "Bachelor of Science in Education",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "B.Ed. ( JHS Specialism)",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BA. Education (English)	",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BA. Sports and Physical Culture	",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BSc. Information Technology - Distance Education",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "BSc. Administration - Distance Education	",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "Bachelor of Arts - Distance Education 	",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                ],
+                                              ),
+                                            ],
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ],
+                                )),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+      );
+    } else if ((g <= 30) && legon == "true") {
+      return Container(
+        height: 450,
+        width: double.infinity,
+        child: Padding(
+          padding: const EdgeInsets.all(28.0),
+          child: Card(
+            child: Column(
+              children: [
+                Image.asset(
+                  "images/Legon.png",
+                  height: 100,
+                ),
+                Text(
+                  "Eligible Programmes",
+                  style: TextStyle(
+                    fontSize: 30,
+                    fontWeight: FontWeight.bold,
+                    color: Color.fromARGB(255, 19, 45, 110),
+                    letterSpacing: 2,
+                    wordSpacing: 8,
+                  ),
+                ),
+                Container(
+                  height: 250,
+                  width: double.infinity,
+                  child: ListView(
+                    children: [
+                      Column(
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.all(10),
+                            child: Container(
+                                height: 200,
+                                color: Colors.white,
+                                child: ListView(
+                                  children: [
+                                    Column(
+                                      children: [
+                                        Column(
+                                          children: [],
+                                        ),
+                                        Column(
+                                          children: [],
+                                        ),
+                                        Column(
+                                          children: [],
+                                        ),
+                                        Text(
+                                          "College of Education",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 20,
+                                          ),
+                                        ),
+                                        Column(
+                                          children: [
+                                            Text(
+                                                "BSc. Administration - Distance Education	",
+                                                style: TextStyle(
+                                                  fontSize: 17,
+                                                  color: Colors.blue,
+                                                  fontStyle: FontStyle.italic,
+                                                )),
+                                            Text(
+                                                "Bachelor of Arts - Distance Education 	",
+                                                style: TextStyle(
+                                                  fontSize: 17,
+                                                  color: Colors.blue,
+                                                  fontStyle: FontStyle.italic,
+                                                )),
+                                          ],
+                                        ),
+                                      ],
+                                    ),
+                                  ],
+                                )),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+      );
+    } else if ((g == 21 || g == 22 || g == 23 || g == 24) && legon == "true") {
+      return Container(
+        height: 450,
+        width: double.infinity,
+        child: Padding(
+          padding: const EdgeInsets.all(28.0),
+          child: Card(
+            // color: Colors.teal,
+            child: Column(
+              children: [
+                Image.asset(
+                  "images/Central University.jpg",
+                  height: 100,
+                ),
+                Text(
+                  "Eligible Courses",
+                  style: TextStyle(
+                    fontSize: 30,
+                    fontWeight: FontWeight.bold,
+                    color: Color.fromARGB(255, 19, 45, 110),
+                    letterSpacing: 2,
+                    wordSpacing: 8,
+                  ),
+                ),
+                Container(
+                  color: Colors.teal,
+                  height: 250,
+                  width: double.infinity,
+                  child: ListView(
+                    children: [
+                      Column(
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.all(10),
+                            child: Container(
+                                height: 200,
+                                color: Colors.white,
+                                child: ListView(
+                                  children: [
+                                    Column(
+                                      children: [
+                                        Text(
+                                          "College of Basic & Applied Sciences",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 20,
+                                          ),
+                                        ),
+                                        Container(
+                                          // color: Colors.amber,
+                                          height: 100,
+                                          child: ListView(
+                                            children: [
+                                              Column(
+                                                children: [
+                                                  Text("B.Sc Agriculture",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "B.Sc. Family & Consumer Sciences",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "B.Sc. Physical Sciences",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "B.Sc. Biological Science",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                ],
+                                              ),
+                                            ],
+                                          ),
+                                        ),
+                                        Text(
+                                          "College of Humanities",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 20,
+                                          ),
+                                        ),
+                                        Container(
+                                          // color: Colors.amber,
+                                          height: 130,
+                                          child: ListView(
+                                            children: [
+                                              Column(
+                                                children: [
+                                                  Text(
+                                                      "B.Sc. Administration Fee-paying",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "B.Sc. Administration City Campus",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "Bachelor of Arts – General Arts Background",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "Bachelor of Arts – Fee-paying",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "Bachelor of Arts – City Campus",
+                                                      style: TextStyle(
+                                                        color: Colors.blue,
+                                                        fontSize: 15,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text("Bachelor of Fine Arts",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                ],
+                                              ),
+                                            ],
+                                          ),
+                                        ),
+                                        Text(
+                                          "College of Education",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 20,
+                                          ),
+                                        ),
+                                        Container(
+                                          // color: Colors.amber,
+                                          height: 130,
+                                          child: ListView(
+                                            children: [
+                                              Column(
+                                                children: [
+                                                  Text(
+                                                    "Bachelor of Arts in Education",
+                                                    style: TextStyle(
+                                                      fontSize: 17,
+                                                      color: Colors.blue,
+                                                      fontStyle:
+                                                          FontStyle.italic,
+                                                    ),
+                                                  ),
+                                                  Text(
+                                                      "Bachelor of Science in Education",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "Bachelor of Arts – Distance Education",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "Bachelor of Science in Administration – Distance Education",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                  Text(
+                                                      "B.Sc. Information Technology – Distance Education",
+                                                      style: TextStyle(
+                                                        fontSize: 17,
+                                                        color: Colors.blue,
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                      )),
+                                                ],
+                                              ),
+                                            ],
+                                          ),
                                         ),
                                       ],
                                     ),

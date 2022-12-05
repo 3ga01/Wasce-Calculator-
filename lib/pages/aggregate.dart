@@ -21,6 +21,7 @@ class _AggregateState extends State<Aggregate> {
 
   bool? isChecked = false;
   bool? uMat = false;
+  bool? legon = false;
 
   @override
   // final SnackBar;
@@ -59,10 +60,9 @@ class _AggregateState extends State<Aggregate> {
                         } else if (grade > 30) {
                           return "you cannot gain admission with grades above  30 ";
                         }
-                        if (!isChecked! && !uMat!) {
+                        if (!isChecked! && !uMat! && !legon!) {
                           return "Pls Select a School";
                         } else {
-                          // _grade = grade as TextEditingController;
                           return null;
                         }
                       },
@@ -154,17 +154,31 @@ class _AggregateState extends State<Aggregate> {
                         ),
                       ),
                       Container(
-                        height: 100,
-                        width: 100,
+                        height: 120,
+                        width: 120,
                         child: Card(
                           elevation: 10,
-                          color: Colors.teal[2000],
                           child: Column(children: [
-                            // Image.network("src"),
-                            Text("data"),
+                            Image.asset(
+                              "images/Legon.png",
+                              height: 50,
+                            ),
+                            Text("University of Ghana"),
                             Row(
-                                // children: [],
+                              children: [
+                                SizedBox(
+                                  width: 60,
+                                ),
+                                Checkbox(
+                                  value: legon,
+                                  onChanged: (newBool) {
+                                    setState(() {
+                                      legon = newBool;
+                                    });
+                                  },
                                 )
+                              ],
+                            )
                           ]),
                         ),
                       ),
@@ -443,9 +457,11 @@ class _AggregateState extends State<Aggregate> {
                               context,
                               MaterialPageRoute(
                                   builder: (context) => Courses(
-                                      grade: grade.toString(),
-                                      school: isChecked.toString(),
-                                      uMat: uMat.toString())));
+                                        grade: grade.toString(),
+                                        school: isChecked.toString(),
+                                        uMat: uMat.toString(),
+                                        legon: legon.toString(),
+                                      )));
                           //  _scaffoldkey.currentState!.showSnackBar(snackBar);
                         }
                       },
