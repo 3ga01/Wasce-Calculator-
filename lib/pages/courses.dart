@@ -55,9 +55,14 @@ class Courses extends StatelessWidget {
           child: Card(
             child: Column(
               children: [
+                Text("Central University",
+                    style: TextStyle(
+                      fontSize: 22,
+                      fontWeight: FontWeight.bold,
+                    )),
                 Image.asset(
                   "images/Central University.jpg",
-                  height: 100,
+                  height: 80,
                 ),
                 Text(
                   "Eligible Programmes",
@@ -460,9 +465,14 @@ class Courses extends StatelessWidget {
             // color: Colors.teal,
             child: Column(
               children: [
+                Text("Central University",
+                    style: TextStyle(
+                      fontSize: 22,
+                      fontWeight: FontWeight.bold,
+                    )),
                 Image.asset(
                   "images/Central University.jpg",
-                  height: 100,
+                  height: 80,
                 ),
                 Text(
                   "Eligible Programmes",
@@ -839,9 +849,14 @@ class Courses extends StatelessWidget {
           child: Card(
             child: Column(
               children: [
+                Text("Central University",
+                    style: TextStyle(
+                      fontSize: 22,
+                      fontWeight: FontWeight.bold,
+                    )),
                 Image.asset(
                   "images/Central University.jpg",
-                  height: 100,
+                  height: 80,
                 ),
                 Text(
                   "Eligible Programmes",
@@ -1202,9 +1217,14 @@ class Courses extends StatelessWidget {
           child: Card(
             child: Column(
               children: [
+                Text("Central University",
+                    style: TextStyle(
+                      fontSize: 22,
+                      fontWeight: FontWeight.bold,
+                    )),
                 Image.asset(
                   "images/Central University.jpg",
-                  height: 100,
+                  height: 80,
                 ),
                 Text(
                   "Eligible Programmes",
@@ -1557,9 +1577,14 @@ class Courses extends StatelessWidget {
           child: Card(
             child: Column(
               children: [
+                Text("Central University",
+                    style: TextStyle(
+                      fontSize: 22,
+                      fontWeight: FontWeight.bold,
+                    )),
                 Image.asset(
                   "images/Central University.jpg",
-                  height: 100,
+                  height: 80,
                 ),
                 Text(
                   "Eligible Programmes",
@@ -1889,9 +1914,14 @@ class Courses extends StatelessWidget {
           child: Card(
             child: Column(
               children: [
+                Text("Central University",
+                    style: TextStyle(
+                      fontSize: 22,
+                      fontWeight: FontWeight.bold,
+                    )),
                 Image.asset(
                   "images/Central University.jpg",
-                  height: 100,
+                  height: 80,
                 ),
                 Text(
                   "Eligible Programmes",
@@ -2213,9 +2243,14 @@ class Courses extends StatelessWidget {
           child: Card(
             child: Column(
               children: [
+                Text("Central University",
+                    style: TextStyle(
+                      fontSize: 22,
+                      fontWeight: FontWeight.bold,
+                    )),
                 Image.asset(
                   "images/Central University.jpg",
-                  height: 100,
+                  height: 80,
                 ),
                 Text(
                   "Eligible Courses",
@@ -2520,9 +2555,14 @@ class Courses extends StatelessWidget {
           child: Card(
             child: Column(
               children: [
+                Text("Central University",
+                    style: TextStyle(
+                      fontSize: 22,
+                      fontWeight: FontWeight.bold,
+                    )),
                 Image.asset(
                   "images/Central University.jpg",
-                  height: 100,
+                  height: 80,
                 ),
                 Text(
                   "Eligible Programmes",
@@ -2790,9 +2830,14 @@ class Courses extends StatelessWidget {
           child: Card(
             child: Column(
               children: [
+                Text("Central University",
+                    style: TextStyle(
+                      fontSize: 22,
+                      fontWeight: FontWeight.bold,
+                    )),
                 Image.asset(
                   "images/Central University.jpg",
-                  height: 100,
+                  height: 80,
                 ),
                 Text(
                   "Eligible Programmes",
@@ -3048,9 +3093,14 @@ class Courses extends StatelessWidget {
             // color: Colors.teal,
             child: Column(
               children: [
+                Text("Central University",
+                    style: TextStyle(
+                      fontSize: 22,
+                      fontWeight: FontWeight.bold,
+                    )),
                 Image.asset(
                   "images/Central University.jpg",
-                  height: 100,
+                  height: 80,
                 ),
                 Text(
                   "Eligible Courses",
@@ -3284,7 +3334,7 @@ class Courses extends StatelessWidget {
 
     if (g <= 7 && umat == "true") {
       return Container(
-        height: 400,
+        height: 450,
         width: double.infinity,
         child: Padding(
           padding: const EdgeInsets.all(28.0),
@@ -3292,9 +3342,14 @@ class Courses extends StatelessWidget {
             // color: Colors.teal,
             child: Column(
               children: [
+                Text("University of Mines & Technology",
+                    style: TextStyle(
+                      fontSize: 22,
+                      fontWeight: FontWeight.bold,
+                    )),
                 Image.asset(
                   "images/Umat.jpg",
-                  height: 100,
+                  height: 80,
                 ),
                 Text(
                   "Eligible Programmes",
@@ -3512,7 +3567,7 @@ class Courses extends StatelessWidget {
       );
     } else if (g == 8 && umat == "true") {
       return Container(
-        height: 400,
+        height: 450,
         width: double.infinity,
         child: Padding(
           padding: const EdgeInsets.all(28.0),
@@ -3520,9 +3575,14 @@ class Courses extends StatelessWidget {
             // color: Colors.teal,
             child: Column(
               children: [
+                Text("University of Mines & Technology",
+                    style: TextStyle(
+                      fontSize: 22,
+                      fontWeight: FontWeight.bold,
+                    )),
                 Image.asset(
                   "images/Umat.jpg",
-                  height: 100,
+                  height: 80,
                 ),
                 Text(
                   "Eligible Programmes",
@@ -3735,7 +3795,7 @@ class Courses extends StatelessWidget {
       );
     } else if (g == 9 && umat == "true") {
       return Container(
-        height: 400,
+        height: 450,
         width: double.infinity,
         child: Padding(
           padding: const EdgeInsets.all(28.0),
@@ -3743,9 +3803,14 @@ class Courses extends StatelessWidget {
             // color: Colors.teal,
             child: Column(
               children: [
+                Text("University of Mines & Technology",
+                    style: TextStyle(
+                      fontSize: 22,
+                      fontWeight: FontWeight.bold,
+                    )),
                 Image.asset(
                   "images/Umat.jpg",
-                  height: 100,
+                  height: 80,
                 ),
                 Text(
                   "Eligible Programmes",
@@ -3937,7 +4002,7 @@ class Courses extends StatelessWidget {
       );
     } else if (g == 10 && umat == "true") {
       return Container(
-        height: 400,
+        height: 450,
         width: double.infinity,
         child: Padding(
           padding: const EdgeInsets.all(28.0),
@@ -3945,9 +4010,14 @@ class Courses extends StatelessWidget {
             // color: Colors.teal,
             child: Column(
               children: [
+                Text("University of Mines & Technology",
+                    style: TextStyle(
+                      fontSize: 22,
+                      fontWeight: FontWeight.bold,
+                    )),
                 Image.asset(
                   "images/Umat.jpg",
-                  height: 100,
+                  height: 80,
                 ),
                 Text(
                   "Eligible Programmes",
@@ -4124,7 +4194,7 @@ class Courses extends StatelessWidget {
               children: [
                 Image.asset(
                   "images/Umat.jpg",
-                  height: 100,
+                  height: 80,
                 ),
                 Text(
                   "Eligible Programmes",
@@ -4274,17 +4344,21 @@ class Courses extends StatelessWidget {
       );
     } else if ((g == 12 || g == 13 || g == 14 || g == 15) && umat == "true") {
       return Container(
-        height: 400,
+        height: 450,
         width: double.infinity,
         child: Padding(
           padding: const EdgeInsets.all(28.0),
           child: Card(
-            // color: Colors.teal,
             child: Column(
               children: [
+                Text("University of Mines & Technology",
+                    style: TextStyle(
+                      fontSize: 22,
+                      fontWeight: FontWeight.bold,
+                    )),
                 Image.asset(
                   "images/Umat.jpg",
-                  height: 100,
+                  height: 80,
                 ),
                 Text(
                   "Eligible Programmes",
@@ -4434,7 +4508,7 @@ class Courses extends StatelessWidget {
       );
     } else if ((g <= 24) && umat == "true") {
       return Container(
-        height: 400,
+        height: 450,
         width: double.infinity,
         child: Padding(
           padding: const EdgeInsets.all(28.0),
@@ -4442,9 +4516,14 @@ class Courses extends StatelessWidget {
             // color: Colors.teal,
             child: Column(
               children: [
+                Text("University of Mines & Technology",
+                    style: TextStyle(
+                      fontSize: 22,
+                      fontWeight: FontWeight.bold,
+                    )),
                 Image.asset(
                   "images/Umat.jpg",
-                  height: 100,
+                  height: 80,
                 ),
                 Text(
                   "Eligible Programmes",
@@ -4564,6 +4643,7 @@ class Courses extends StatelessWidget {
     }
   }
 
+//Legon
   Container Legon(String? grade1, String legon) {
     var g = int.parse(grade);
 
@@ -4576,9 +4656,14 @@ class Courses extends StatelessWidget {
           child: Card(
             child: Column(
               children: [
+                Text("University of Ghana-Legon",
+                    style: TextStyle(
+                      fontSize: 22,
+                      fontWeight: FontWeight.bold,
+                    )),
                 Image.asset(
                   "images/Legon.png",
-                  height: 100,
+                  height: 80,
                 ),
                 Text(
                   "Eligible Programmes",
@@ -5026,9 +5111,14 @@ class Courses extends StatelessWidget {
           child: Card(
             child: Column(
               children: [
+                Text("University of Ghana-Legon",
+                    style: TextStyle(
+                      fontSize: 22,
+                      fontWeight: FontWeight.bold,
+                    )),
                 Image.asset(
                   "images/Legon.png",
-                  height: 100,
+                  height: 80,
                 ),
                 Text(
                   "Eligible Programmes",
@@ -5461,7 +5551,7 @@ class Courses extends StatelessWidget {
               children: [
                 Image.asset(
                   "images/Legon.png",
-                  height: 100,
+                  height: 80,
                 ),
                 Text(
                   "Eligible Programmes",
@@ -5879,7 +5969,7 @@ class Courses extends StatelessWidget {
               children: [
                 Image.asset(
                   "images/Legon.png",
-                  height: 100,
+                  height: 80,
                 ),
                 Text(
                   "Eligible Programmes",
@@ -6258,7 +6348,7 @@ class Courses extends StatelessWidget {
               children: [
                 Image.asset(
                   "images/Legon.png",
-                  height: 100,
+                  height: 80,
                 ),
                 Text(
                   "Eligible Programmes",
@@ -6601,7 +6691,7 @@ class Courses extends StatelessWidget {
               children: [
                 Image.asset(
                   "images/Legon.png",
-                  height: 100,
+                  height: 80,
                 ),
                 Text(
                   "Eligible Programmes",
@@ -6911,7 +7001,7 @@ class Courses extends StatelessWidget {
               children: [
                 Image.asset(
                   "images/Legon.png",
-                  height: 100,
+                  height: 80,
                 ),
                 Text(
                   "Eligible Programmes",
@@ -7184,7 +7274,7 @@ class Courses extends StatelessWidget {
               children: [
                 Image.asset(
                   "images/Legon.png",
-                  height: 100,
+                  height: 80,
                 ),
                 Text(
                   "Eligible Programmes",
@@ -7435,7 +7525,7 @@ class Courses extends StatelessWidget {
               children: [
                 Image.asset(
                   "images/Legon.png",
-                  height: 100,
+                  height: 80,
                 ),
                 Text(
                   "Eligible Programmes",
@@ -7496,238 +7586,6 @@ class Courses extends StatelessWidget {
                                                   fontStyle: FontStyle.italic,
                                                 )),
                                           ],
-                                        ),
-                                      ],
-                                    ),
-                                  ],
-                                )),
-                          ),
-                        ],
-                      ),
-                    ],
-                  ),
-                ),
-              ],
-            ),
-          ),
-        ),
-      );
-    } else if ((g == 21 || g == 22 || g == 23 || g == 24) && legon == "true") {
-      return Container(
-        height: 450,
-        width: double.infinity,
-        child: Padding(
-          padding: const EdgeInsets.all(28.0),
-          child: Card(
-            // color: Colors.teal,
-            child: Column(
-              children: [
-                Image.asset(
-                  "images/Central University.jpg",
-                  height: 100,
-                ),
-                Text(
-                  "Eligible Courses",
-                  style: TextStyle(
-                    fontSize: 30,
-                    fontWeight: FontWeight.bold,
-                    color: Color.fromARGB(255, 19, 45, 110),
-                    letterSpacing: 2,
-                    wordSpacing: 8,
-                  ),
-                ),
-                Container(
-                  color: Colors.teal,
-                  height: 250,
-                  width: double.infinity,
-                  child: ListView(
-                    children: [
-                      Column(
-                        children: [
-                          Padding(
-                            padding: const EdgeInsets.all(10),
-                            child: Container(
-                                height: 200,
-                                color: Colors.white,
-                                child: ListView(
-                                  children: [
-                                    Column(
-                                      children: [
-                                        Text(
-                                          "College of Basic & Applied Sciences",
-                                          style: TextStyle(
-                                            fontWeight: FontWeight.bold,
-                                            fontSize: 20,
-                                          ),
-                                        ),
-                                        Container(
-                                          // color: Colors.amber,
-                                          height: 100,
-                                          child: ListView(
-                                            children: [
-                                              Column(
-                                                children: [
-                                                  Text("B.Sc Agriculture",
-                                                      style: TextStyle(
-                                                        fontSize: 17,
-                                                        color: Colors.blue,
-                                                        fontStyle:
-                                                            FontStyle.italic,
-                                                      )),
-                                                  Text(
-                                                      "B.Sc. Family & Consumer Sciences",
-                                                      style: TextStyle(
-                                                        fontSize: 17,
-                                                        color: Colors.blue,
-                                                        fontStyle:
-                                                            FontStyle.italic,
-                                                      )),
-                                                  Text(
-                                                      "B.Sc. Physical Sciences",
-                                                      style: TextStyle(
-                                                        fontSize: 17,
-                                                        color: Colors.blue,
-                                                        fontStyle:
-                                                            FontStyle.italic,
-                                                      )),
-                                                  Text(
-                                                      "B.Sc. Biological Science",
-                                                      style: TextStyle(
-                                                        fontSize: 17,
-                                                        color: Colors.blue,
-                                                        fontStyle:
-                                                            FontStyle.italic,
-                                                      )),
-                                                ],
-                                              ),
-                                            ],
-                                          ),
-                                        ),
-                                        Text(
-                                          "College of Humanities",
-                                          style: TextStyle(
-                                            fontWeight: FontWeight.bold,
-                                            fontSize: 20,
-                                          ),
-                                        ),
-                                        Container(
-                                          // color: Colors.amber,
-                                          height: 130,
-                                          child: ListView(
-                                            children: [
-                                              Column(
-                                                children: [
-                                                  Text(
-                                                      "B.Sc. Administration Fee-paying",
-                                                      style: TextStyle(
-                                                        fontSize: 17,
-                                                        color: Colors.blue,
-                                                        fontStyle:
-                                                            FontStyle.italic,
-                                                      )),
-                                                  Text(
-                                                      "B.Sc. Administration City Campus",
-                                                      style: TextStyle(
-                                                        fontSize: 17,
-                                                        color: Colors.blue,
-                                                        fontStyle:
-                                                            FontStyle.italic,
-                                                      )),
-                                                  Text(
-                                                      "Bachelor of Arts – General Arts Background",
-                                                      style: TextStyle(
-                                                        fontSize: 17,
-                                                        color: Colors.blue,
-                                                        fontStyle:
-                                                            FontStyle.italic,
-                                                      )),
-                                                  Text(
-                                                      "Bachelor of Arts – Fee-paying",
-                                                      style: TextStyle(
-                                                        fontSize: 17,
-                                                        color: Colors.blue,
-                                                        fontStyle:
-                                                            FontStyle.italic,
-                                                      )),
-                                                  Text(
-                                                      "Bachelor of Arts – City Campus",
-                                                      style: TextStyle(
-                                                        color: Colors.blue,
-                                                        fontSize: 15,
-                                                        fontStyle:
-                                                            FontStyle.italic,
-                                                      )),
-                                                  Text("Bachelor of Fine Arts",
-                                                      style: TextStyle(
-                                                        fontSize: 17,
-                                                        color: Colors.blue,
-                                                        fontStyle:
-                                                            FontStyle.italic,
-                                                      )),
-                                                ],
-                                              ),
-                                            ],
-                                          ),
-                                        ),
-                                        Text(
-                                          "College of Education",
-                                          style: TextStyle(
-                                            fontWeight: FontWeight.bold,
-                                            fontSize: 20,
-                                          ),
-                                        ),
-                                        Container(
-                                          // color: Colors.amber,
-                                          height: 130,
-                                          child: ListView(
-                                            children: [
-                                              Column(
-                                                children: [
-                                                  Text(
-                                                    "Bachelor of Arts in Education",
-                                                    style: TextStyle(
-                                                      fontSize: 17,
-                                                      color: Colors.blue,
-                                                      fontStyle:
-                                                          FontStyle.italic,
-                                                    ),
-                                                  ),
-                                                  Text(
-                                                      "Bachelor of Science in Education",
-                                                      style: TextStyle(
-                                                        fontSize: 17,
-                                                        color: Colors.blue,
-                                                        fontStyle:
-                                                            FontStyle.italic,
-                                                      )),
-                                                  Text(
-                                                      "Bachelor of Arts – Distance Education",
-                                                      style: TextStyle(
-                                                        fontSize: 17,
-                                                        color: Colors.blue,
-                                                        fontStyle:
-                                                            FontStyle.italic,
-                                                      )),
-                                                  Text(
-                                                      "Bachelor of Science in Administration – Distance Education",
-                                                      style: TextStyle(
-                                                        fontSize: 17,
-                                                        color: Colors.blue,
-                                                        fontStyle:
-                                                            FontStyle.italic,
-                                                      )),
-                                                  Text(
-                                                      "B.Sc. Information Technology – Distance Education",
-                                                      style: TextStyle(
-                                                        fontSize: 17,
-                                                        color: Colors.blue,
-                                                        fontStyle:
-                                                            FontStyle.italic,
-                                                      )),
-                                                ],
-                                              ),
-                                            ],
-                                          ),
                                         ),
                                       ],
                                     ),

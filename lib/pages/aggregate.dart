@@ -22,6 +22,11 @@ class _AggregateState extends State<Aggregate> {
   bool? isChecked = false;
   bool? uMat = false;
   bool? legon = false;
+  bool? ucc = false;
+  bool? ashesi = false;
+  bool? uenr = false;
+  bool? knust = false;
+  bool? actu = false;
 
   @override
   // final SnackBar;
@@ -90,11 +95,10 @@ class _AggregateState extends State<Aggregate> {
                         height: 120,
                         width: 120,
                         child: Card(
-                          elevation: 5,
+                          elevation: 10,
                           child: Column(children: [
                             Image.asset(
                               "images/Central University.jpg",
-                              // fit: BoxFit.cover,
                               height: 50,
                             ),
                             Text(
@@ -126,7 +130,6 @@ class _AggregateState extends State<Aggregate> {
                         width: 120,
                         child: Card(
                           elevation: 10,
-                          // color: Colors.teal[2000],
                           child: Column(children: [
                             Image.asset(
                               "images/Umat.jpg",
@@ -140,7 +143,6 @@ class _AggregateState extends State<Aggregate> {
                                 ),
                                 Checkbox(
                                   value: uMat,
-                                  // tristate: true,
                                   onChanged: (newBool) {
                                     setState(() {
                                       uMat = newBool;
@@ -189,42 +191,166 @@ class _AggregateState extends State<Aggregate> {
                     children: [
                       Container(
                         child: Container(
-                          height: 100,
-                          width: 100,
+                          height: 120,
+                          width: 120,
                           child: Card(
                             elevation: 10,
-                            color: Colors.teal[2000],
                             child: Column(children: [
-                              // Image.network("src"),
-                              Text("data"),
+                              Image.asset(
+                                "images/ucc.webp",
+                                height: 50,
+                              ),
+                              Text(
+                                "UCC",
+                              ),
                               Row(
-                                  // children: [],
+                                children: [
+                                  SizedBox(
+                                    width: 60,
+                                  ),
+                                  Checkbox(
+                                    value: ucc,
+                                    onChanged: (newBool) {
+                                      setState(() {
+                                        ucc = newBool;
+                                      });
+                                    },
                                   )
+                                ],
+                              )
                             ]),
                           ),
                         ),
                       ),
                       Container(
-                        height: 100,
-                        width: 100,
+                        height: 120,
+                        width: 120,
                         child: Card(
                           elevation: 10,
-                          color: Colors.teal[2000],
                           child: Column(children: [
-                            // Image.network("src"),
-                            Text("data"),
+                            Image.asset(
+                              "images/ashesi1.png",
+                              height: 50,
+                            ),
+                            Text("Ashesi University"),
                             Row(
-                                // children: [],
+                              children: [
+                                SizedBox(
+                                  width: 60,
+                                ),
+                                Checkbox(
+                                  value: ashesi,
+                                  onChanged: (newBool) {
+                                    setState(() {
+                                      ashesi = newBool;
+                                    });
+                                  },
                                 )
+                              ],
+                            )
                           ]),
                         ),
                       ),
                       Container(
-                        height: 100,
-                        width: 100,
+                        height: 120,
+                        width: 120,
                         child: Card(
                           elevation: 10,
-                          color: Colors.teal[2000],
+                          child: Column(children: [
+                            Image.asset(
+                              "images/uenr.png",
+                              height: 50,
+                            ),
+                            Text("UENR"),
+                            Row(
+                              children: [
+                                SizedBox(
+                                  width: 60,
+                                ),
+                                Checkbox(
+                                  value: uenr,
+                                  onChanged: (newBool) {
+                                    setState(() {
+                                      uenr = newBool;
+                                    });
+                                  },
+                                )
+                              ],
+                            )
+                          ]),
+                        ),
+                      ),
+                    ],
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      Container(
+                        child: Container(
+                          height: 120,
+                          width: 120,
+                          child: Card(
+                            elevation: 10,
+                            child: Column(children: [
+                              Image.asset(
+                                "images/Knust.jpg",
+                                height: 50,
+                              ),
+                              Text("KNUST"),
+                              Row(
+                                children: [
+                                  SizedBox(
+                                    width: 60,
+                                  ),
+                                  Checkbox(
+                                    value: knust,
+                                    onChanged: (newBool) {
+                                      setState(() {
+                                        knust = newBool;
+                                      });
+                                    },
+                                  )
+                                ],
+                              )
+                            ]),
+                          ),
+                        ),
+                      ),
+                      Container(
+                        height: 120,
+                        width: 120,
+                        child: Card(
+                          elevation: 10,
+                          child: Column(children: [
+                            Image.asset(
+                              "images/atu.webp",
+                              height: 50,
+                              
+                            ),
+                            Text("ACTU"),
+                            Row(
+                              children: [
+                                SizedBox(
+                                  width: 60,
+                                ),
+                                Checkbox(
+                                  value: actu,
+                                  onChanged: (newBool) {
+                                    setState(() {
+                                      actu = newBool;
+                                    });
+                                  },
+                                )
+                              ],
+                            )
+                          ]),
+                        ),
+                      ),
+                      Container(
+                        height: 120,
+                        width: 120,
+                        child: Card(
+                          elevation: 10,
                           child: Column(children: [
                             // Image.network("src"),
                             Text("data"),
@@ -276,7 +402,6 @@ class _AggregateState extends State<Aggregate> {
                         width: 100,
                         child: Card(
                           elevation: 10,
-                          color: Colors.teal[2000],
                           child: Column(children: [
                             // Image.network("src"),
                             Text("data"),
@@ -297,7 +422,6 @@ class _AggregateState extends State<Aggregate> {
                           width: 100,
                           child: Card(
                             elevation: 10,
-                            color: Colors.teal[2000],
                             child: Column(children: [
                               // Image.network("src"),
                               Text("data"),
@@ -313,7 +437,6 @@ class _AggregateState extends State<Aggregate> {
                         width: 100,
                         child: Card(
                           elevation: 10,
-                          color: Colors.teal[2000],
                           child: Column(children: [
                             // Image.network("src"),
                             Text("data"),
@@ -328,7 +451,6 @@ class _AggregateState extends State<Aggregate> {
                         width: 100,
                         child: Card(
                           elevation: 10,
-                          color: Colors.teal[2000],
                           child: Column(children: [
                             // Image.network("src"),
                             Text("data"),
@@ -349,59 +471,6 @@ class _AggregateState extends State<Aggregate> {
                           width: 100,
                           child: Card(
                             elevation: 10,
-                            color: Colors.teal[2000],
-                            child: Column(children: [
-                              // Image.network("src"),
-                              Text("data"),
-                              Row(
-                                  // children: [],
-                                  )
-                            ]),
-                          ),
-                        ),
-                      ),
-                      Container(
-                        height: 100,
-                        width: 100,
-                        child: Card(
-                          elevation: 10,
-                          color: Colors.teal[2000],
-                          child: Column(children: [
-                            // Image.network("src"),
-                            Text("data"),
-                            Row(
-                                // children: [],
-                                )
-                          ]),
-                        ),
-                      ),
-                      Container(
-                        height: 100,
-                        width: 100,
-                        child: Card(
-                          elevation: 10,
-                          color: Colors.teal[2000],
-                          child: Column(children: [
-                            // Image.network("src"),
-                            Text("data"),
-                            Row(
-                                // children: [],
-                                )
-                          ]),
-                        ),
-                      ),
-                    ],
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: [
-                      Container(
-                        child: Container(
-                          height: 100,
-                          width: 100,
-                          child: Card(
-                            elevation: 10,
-                            color: Colors.teal[2000],
                             child: Column(children: [
                               // Image.network("src"),
                               Text("data"),
