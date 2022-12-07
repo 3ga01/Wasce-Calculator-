@@ -74,7 +74,7 @@ class _AggregateState extends State<Aggregate> {
                         } else if (grade > 30) {
                           return "you cannot gain admission with grades above  30 ";
                         }
-                        if (!isChecked! && !uMat! && !legon!) {
+                        if (!isChecked! && !uMat! && !legon! && !ucc!) {
                           return "Pls Select a School";
                         } else {
                           return null;
@@ -686,6 +686,7 @@ class _AggregateState extends State<Aggregate> {
                                         school: isChecked.toString(),
                                         uMat: uMat.toString(),
                                         legon: legon.toString(),
+                                        ucc: ucc.toString(),
                                       )));
                           //  _scaffoldkey.currentState!.showSnackBar(snackBar);
                         }
