@@ -78,7 +78,8 @@ class _AggregateState extends State<Aggregate> {
                             !uMat! &&
                             !legon! &&
                             !ucc! &&
-                            !ashesi!) {
+                            !ashesi! &&
+                            !uenr!) {
                           return "Pls Select a School";
                         } else {
                           return null;
@@ -691,6 +692,7 @@ class _AggregateState extends State<Aggregate> {
                                         legon: legon.toString(),
                                         ucc: ucc.toString(),
                                         ashesi: ashesi.toString(),
+                                        uenr: uenr.toString(),
                                       )));
                           //  _scaffoldkey.currentState!.showSnackBar(snackBar);
                         }
