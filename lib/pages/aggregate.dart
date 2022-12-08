@@ -74,7 +74,11 @@ class _AggregateState extends State<Aggregate> {
                         } else if (grade > 30) {
                           return "you cannot gain admission with grades above  30 ";
                         }
-                        if (!isChecked! && !uMat! && !legon! && !ucc!) {
+                        if (!isChecked! &&
+                            !uMat! &&
+                            !legon! &&
+                            !ucc! &&
+                            !ashesi!) {
                           return "Pls Select a School";
                         } else {
                           return null;
@@ -675,7 +679,6 @@ class _AggregateState extends State<Aggregate> {
                   Padding(
                     padding: const EdgeInsets.all(18.0),
                     child: ElevatedButton(
-                      // ignore: prefer_equal_for_default_values
                       onPressed: () {
                         if (formKey.currentState!.validate()) {
                           Navigator.push(
@@ -687,6 +690,7 @@ class _AggregateState extends State<Aggregate> {
                                         uMat: uMat.toString(),
                                         legon: legon.toString(),
                                         ucc: ucc.toString(),
+                                        ashesi: ashesi.toString(),
                                       )));
                           //  _scaffoldkey.currentState!.showSnackBar(snackBar);
                         }
