@@ -79,7 +79,8 @@ class _AggregateState extends State<Aggregate> {
                             !legon! &&
                             !ucc! &&
                             !ashesi! &&
-                            !uenr!) {
+                            !uenr! &&
+                            !actu!) {
                           return "Pls Select a School";
                         } else {
                           return null;
@@ -693,6 +694,7 @@ class _AggregateState extends State<Aggregate> {
                                         ucc: ucc.toString(),
                                         ashesi: ashesi.toString(),
                                         uenr: uenr.toString(),
+                                        actu: actu.toString(),
                                       )));
                           //  _scaffoldkey.currentState!.showSnackBar(snackBar);
                         }
