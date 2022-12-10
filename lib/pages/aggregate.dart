@@ -81,7 +81,12 @@ class _AggregateState extends State<Aggregate> {
                             !ashesi! &&
                             !uenr! &&
                             !actu! &&
-                            !knust!) {
+                            !knust! &&
+                            !uhas! &&
+                            !all! &&
+                            !uds! &&
+                            !puc! &&
+                            !upsa!) {
                           return "Pls Select a School";
                         } else {
                           return null;
@@ -104,120 +109,26 @@ class _AggregateState extends State<Aggregate> {
                   SizedBox(
                     height: 40,
                   ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: [
-                      Container(
-                        height: 120,
-                        width: 120,
-                        child: Card(
-                          elevation: 10,
-                          child: Column(children: [
-                            Image.asset(
-                              "images/Central University.jpg",
-                              height: 50,
-                            ),
-                            Text(
-                              "Central University",
-                              style: TextStyle(
-                                fontSize: 14,
-                              ),
-                            ),
-                            Row(
-                              children: [
-                                SizedBox(
-                                  width: 60,
-                                ),
-                                Checkbox(
-                                  value: isChecked,
-                                  onChanged: (newBool) {
-                                    setState(() {
-                                      isChecked = newBool;
-                                    });
-                                  },
-                                )
-                              ],
-                            )
-                          ]),
-                        ),
-                      ),
-                      Container(
-                        height: 120,
-                        width: 120,
-                        child: Card(
-                          elevation: 10,
-                          child: Column(children: [
-                            Image.asset(
-                              "images/Umat.jpg",
-                              height: 50,
-                            ),
-                            Text("University of Mines"),
-                            Row(
-                              children: [
-                                SizedBox(
-                                  width: 60,
-                                ),
-                                Checkbox(
-                                  value: uMat,
-                                  onChanged: (newBool) {
-                                    setState(() {
-                                      uMat = newBool;
-                                    });
-                                  },
-                                )
-                              ],
-                              // children: [],
-                            )
-                          ]),
-                        ),
-                      ),
-                      Container(
-                        height: 120,
-                        width: 120,
-                        child: Card(
-                          elevation: 10,
-                          child: Column(children: [
-                            Image.asset(
-                              "images/Legon.png",
-                              height: 50,
-                            ),
-                            Text("University of Ghana"),
-                            Row(
-                              children: [
-                                SizedBox(
-                                  width: 60,
-                                ),
-                                Checkbox(
-                                  value: legon,
-                                  onChanged: (newBool) {
-                                    setState(() {
-                                      legon = newBool;
-                                    });
-                                  },
-                                )
-                              ],
-                            )
-                          ]),
-                        ),
-                      ),
-                    ],
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: [
-                      Container(
-                        child: Container(
+                  SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        Container(
                           height: 120,
                           width: 120,
                           child: Card(
                             elevation: 10,
                             child: Column(children: [
                               Image.asset(
-                                "images/ucc.webp",
-                                height: 50,
+                                "images/Central University.jpg",
+                                height: 45,
                               ),
                               Text(
-                                "UCC",
+                                "Central University",
+                                style: TextStyle(
+                                  fontSize: 14,
+                                ),
                               ),
                               Row(
                                 children: [
@@ -225,10 +136,10 @@ class _AggregateState extends State<Aggregate> {
                                     width: 60,
                                   ),
                                   Checkbox(
-                                    value: ucc,
+                                    value: isChecked,
                                     onChanged: (newBool) {
                                       setState(() {
-                                        ucc = newBool;
+                                        isChecked = newBool;
                                       });
                                     },
                                   )
@@ -237,186 +148,60 @@ class _AggregateState extends State<Aggregate> {
                             ]),
                           ),
                         ),
-                      ),
-                      Container(
-                        height: 120,
-                        width: 120,
-                        child: Card(
-                          elevation: 10,
-                          child: Column(children: [
-                            Image.asset(
-                              "images/ashesi1.png",
-                              height: 50,
-                            ),
-                            Text("Ashesi University"),
-                            Row(
-                              children: [
-                                SizedBox(
-                                  width: 60,
-                                ),
-                                Checkbox(
-                                  value: ashesi,
-                                  onChanged: (newBool) {
-                                    setState(() {
-                                      ashesi = newBool;
-                                    });
-                                  },
-                                )
-                              ],
-                            )
-                          ]),
-                        ),
-                      ),
-                      Container(
-                        height: 120,
-                        width: 120,
-                        child: Card(
-                          elevation: 10,
-                          child: Column(children: [
-                            Image.asset(
-                              "images/uenr.png",
-                              height: 50,
-                            ),
-                            Text("UENR"),
-                            Row(
-                              children: [
-                                SizedBox(
-                                  width: 60,
-                                ),
-                                Checkbox(
-                                  value: uenr,
-                                  onChanged: (newBool) {
-                                    setState(() {
-                                      uenr = newBool;
-                                    });
-                                  },
-                                )
-                              ],
-                            )
-                          ]),
-                        ),
-                      ),
-                    ],
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: [
-                      Container(
-                        child: Container(
+                        Container(
                           height: 120,
                           width: 120,
                           child: Card(
                             elevation: 10,
                             child: Column(children: [
                               Image.asset(
-                                "images/Knust.jpg",
-                                height: 50,
+                                "images/Umat.jpg",
+                                height: 45,
                               ),
-                              Text("KNUST"),
+                              Text(
+                                "UMaT",
+                                // overflow: TextOverflow.fade,
+                              ),
                               Row(
                                 children: [
                                   SizedBox(
                                     width: 60,
                                   ),
                                   Checkbox(
-                                    value: knust,
+                                    value: uMat,
                                     onChanged: (newBool) {
                                       setState(() {
-                                        knust = newBool;
+                                        uMat = newBool;
                                       });
                                     },
                                   )
                                 ],
+                                // children: [],
                               )
                             ]),
                           ),
                         ),
-                      ),
-                      Container(
-                        height: 120,
-                        width: 120,
-                        child: Card(
-                          elevation: 10,
-                          child: Column(children: [
-                            Image.asset(
-                              "images/atu.webp",
-                              height: 50,
-                            ),
-                            Text("ACTU"),
-                            Row(
-                              children: [
-                                SizedBox(
-                                  width: 60,
-                                ),
-                                Checkbox(
-                                  value: actu,
-                                  onChanged: (newBool) {
-                                    setState(() {
-                                      actu = newBool;
-                                    });
-                                  },
-                                )
-                              ],
-                            )
-                          ]),
-                        ),
-                      ),
-                      Container(
-                        height: 120,
-                        width: 120,
-                        child: Card(
-                          elevation: 10,
-                          child: Column(children: [
-                            Image.asset(
-                              "images/ktu.png",
-                              height: 50,
-                            ),
-                            Text("KSTU"),
-                            Row(
-                              children: [
-                                SizedBox(
-                                  width: 60,
-                                ),
-                                Checkbox(
-                                  value: kstu,
-                                  onChanged: (newBool) {
-                                    setState(() {
-                                      kstu = newBool;
-                                    });
-                                  },
-                                )
-                              ],
-                            )
-                          ]),
-                        ),
-                      ),
-                    ],
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: [
-                      Container(
-                        child: Container(
+                        Container(
                           height: 120,
                           width: 120,
                           child: Card(
                             elevation: 10,
                             child: Column(children: [
                               Image.asset(
-                                "images/uhas2.jfif",
-                                height: 50,
+                                "images/Legon.png",
+                                height: 40,
                               ),
-                              Text("UHAS"),
+                              Text("UG-Legon"),
                               Row(
                                 children: [
                                   SizedBox(
                                     width: 60,
                                   ),
                                   Checkbox(
-                                    value: uhas,
+                                    value: legon,
                                     onChanged: (newBool) {
                                       setState(() {
-                                        uhas = newBool;
+                                        legon = newBool;
                                       });
                                     },
                                   )
@@ -425,93 +210,68 @@ class _AggregateState extends State<Aggregate> {
                             ]),
                           ),
                         ),
-                      ),
-                      Container(
-                        height: 120,
-                        width: 120,
-                        child: Card(
-                          elevation: 10,
-                          child: Column(children: [
-                            Image.asset(
-                              "images/all.png",
-                              height: 50,
-                            ),
-                            Text("All Nations "),
-                            // Text("University"),
-                            Row(
-                              children: [
-                                SizedBox(
-                                  width: 60,
-                                ),
-                                Checkbox(
-                                  value: all,
-                                  onChanged: (newBool) {
-                                    setState(() {
-                                      all = newBool;
-                                    });
-                                  },
-                                )
-                              ],
-                            )
-                          ]),
-                        ),
-                      ),
-                      Container(
-                        height: 120,
-                        width: 120,
-                        child: Card(
-                          elevation: 10,
-                          child: Column(children: [
-                            Image.asset(
-                              "images/uds.png",
-                              height: 50,
-                            ),
-                            Text("UDS"),
-                            Row(
-                              children: [
-                                SizedBox(
-                                  width: 60,
-                                ),
-                                Checkbox(
-                                  value: uds,
-                                  onChanged: (newBool) {
-                                    setState(() {
-                                      uds = newBool;
-                                    });
-                                  },
-                                )
-                              ],
-                            )
-                          ]),
-                        ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: [
-                      Container(
-                        child: Container(
+                  SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        Container(
+                          child: Container(
+                            height: 120,
+                            width: 120,
+                            child: Card(
+                              elevation: 10,
+                              child: Column(children: [
+                                Image.asset(
+                                  "images/ucc.webp",
+                                  height: 45,
+                                ),
+                                Text(
+                                  "UCC",
+                                ),
+                                Row(
+                                  children: [
+                                    SizedBox(
+                                      width: 60,
+                                    ),
+                                    Checkbox(
+                                      value: ucc,
+                                      onChanged: (newBool) {
+                                        setState(() {
+                                          ucc = newBool;
+                                        });
+                                      },
+                                    )
+                                  ],
+                                )
+                              ]),
+                            ),
+                          ),
+                        ),
+                        Container(
                           height: 120,
                           width: 120,
                           child: Card(
                             elevation: 10,
                             child: Column(children: [
                               Image.asset(
-                                "images/uew.png",
-                                height: 50,
+                                "images/ashesi1.png",
+                                height: 45,
                               ),
-                              Text("UEW"),
+                              Text("Ashesi University"),
                               Row(
                                 children: [
                                   SizedBox(
                                     width: 60,
                                   ),
                                   Checkbox(
-                                    value: uew,
+                                    value: ashesi,
                                     onChanged: (newBool) {
                                       setState(() {
-                                        uew = newBool;
+                                        ashesi = newBool;
                                       });
                                     },
                                   )
@@ -520,92 +280,27 @@ class _AggregateState extends State<Aggregate> {
                             ]),
                           ),
                         ),
-                      ),
-                      Container(
-                        height: 120,
-                        width: 120,
-                        child: Card(
-                          elevation: 10,
-                          child: Column(children: [
-                            Image.asset(
-                              "images/puc.webp",
-                              height: 50,
-                            ),
-                            Text("PUC"),
-                            Row(
-                              children: [
-                                SizedBox(
-                                  width: 60,
-                                ),
-                                Checkbox(
-                                  value: puc,
-                                  onChanged: (newBool) {
-                                    setState(() {
-                                      puc = newBool;
-                                    });
-                                  },
-                                )
-                              ],
-                            )
-                          ]),
-                        ),
-                      ),
-                      Container(
-                        height: 120,
-                        width: 120,
-                        child: Card(
-                          elevation: 10,
-                          child: Column(children: [
-                            Image.asset(
-                              "images/cctu.png",
-                              height: 50,
-                            ),
-                            Text("CCTU"),
-                            Row(
-                              children: [
-                                SizedBox(
-                                  width: 60,
-                                ),
-                                Checkbox(
-                                  value: cctu,
-                                  onChanged: (newBool) {
-                                    setState(() {
-                                      cctu = newBool;
-                                    });
-                                  },
-                                )
-                              ],
-                            )
-                          ]),
-                        ),
-                      ),
-                    ],
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: [
-                      Container(
-                        child: Container(
+                        Container(
                           height: 120,
                           width: 120,
                           child: Card(
                             elevation: 10,
                             child: Column(children: [
                               Image.asset(
-                                "images/vvu.png",
-                                height: 50,
+                                "images/uenr.png",
+                                height: 45,
                               ),
-                              Text("Valley View"),
+                              Text("UENR"),
                               Row(
                                 children: [
                                   SizedBox(
                                     width: 60,
                                   ),
                                   Checkbox(
-                                    value: vvu,
+                                    value: uenr,
                                     onChanged: (newBool) {
                                       setState(() {
-                                        vvu = newBool;
+                                        uenr = newBool;
                                       });
                                     },
                                   )
@@ -614,67 +309,398 @@ class _AggregateState extends State<Aggregate> {
                             ]),
                           ),
                         ),
-                      ),
-                      Container(
-                        height: 120,
-                        width: 120,
-                        child: Card(
-                          elevation: 10,
-                          color: Colors.teal[2000],
-                          child: Column(children: [
-                            Image.asset(
-                              "images/upsa.png",
-                              height: 50,
-                            ),
-                            Text("UPSA"),
-                            Row(
-                              children: [
-                                SizedBox(
-                                  width: 60,
+                      ],
+                    ),
+                  ),
+                  SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        Container(
+                          child: Container(
+                            height: 120,
+                            width: 120,
+                            child: Card(
+                              elevation: 10,
+                              child: Column(children: [
+                                Image.asset(
+                                  "images/Knust.jpg",
+                                  height: 45,
                                 ),
-                                Checkbox(
-                                  value: upsa,
-                                  onChanged: (newBool) {
-                                    setState(() {
-                                      upsa = newBool;
-                                    });
-                                  },
+                                Text("KNUST"),
+                                Row(
+                                  children: [
+                                    SizedBox(
+                                      width: 60,
+                                    ),
+                                    Checkbox(
+                                      value: knust,
+                                      onChanged: (newBool) {
+                                        setState(() {
+                                          knust = newBool;
+                                        });
+                                      },
+                                    )
+                                  ],
                                 )
-                              ],
-                            )
-                          ]),
-                        ),
-                      ),
-                      Container(
-                        height: 120,
-                        width: 120,
-                        child: Card(
-                          elevation: 10,
-                          child: Column(children: [
-                            Image.asset(
-                              "images/gij.jfif",
-                              height: 50,
+                              ]),
                             ),
-                            Text("GIJ"),
-                            Row(
-                              children: [
-                                SizedBox(
-                                  width: 60,
-                                ),
-                                Checkbox(
-                                  value: gij,
-                                  onChanged: (newBool) {
-                                    setState(() {
-                                      gij = newBool;
-                                    });
-                                  },
-                                )
-                              ],
-                            )
-                          ]),
+                          ),
                         ),
-                      ),
-                    ],
+                        Container(
+                          height: 120,
+                          width: 120,
+                          child: Card(
+                            elevation: 10,
+                            child: Column(children: [
+                              Image.asset(
+                                "images/atu.webp",
+                                height: 45,
+                              ),
+                              Text("ACTU"),
+                              Row(
+                                children: [
+                                  SizedBox(
+                                    width: 60,
+                                  ),
+                                  Checkbox(
+                                    value: actu,
+                                    onChanged: (newBool) {
+                                      setState(() {
+                                        actu = newBool;
+                                      });
+                                    },
+                                  )
+                                ],
+                              )
+                            ]),
+                          ),
+                        ),
+                        Container(
+                          height: 120,
+                          width: 120,
+                          child: Card(
+                            elevation: 10,
+                            child: Column(children: [
+                              Image.asset(
+                                "images/ktu.png",
+                                height: 45,
+                              ),
+                              Text("KSTU"),
+                              Row(
+                                children: [
+                                  SizedBox(
+                                    width: 60,
+                                  ),
+                                  Checkbox(
+                                    value: kstu,
+                                    onChanged: (newBool) {
+                                      setState(() {
+                                        kstu = newBool;
+                                      });
+                                    },
+                                  )
+                                ],
+                              )
+                            ]),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        Container(
+                          child: Container(
+                            height: 120,
+                            width: 120,
+                            child: Card(
+                              elevation: 10,
+                              child: Column(children: [
+                                Image.asset(
+                                  "images/uhas2.jfif",
+                                  height: 45,
+                                ),
+                                Text("UHAS"),
+                                Row(
+                                  children: [
+                                    SizedBox(
+                                      width: 60,
+                                    ),
+                                    Checkbox(
+                                      value: uhas,
+                                      onChanged: (newBool) {
+                                        setState(() {
+                                          uhas = newBool;
+                                        });
+                                      },
+                                    )
+                                  ],
+                                )
+                              ]),
+                            ),
+                          ),
+                        ),
+                        Container(
+                          height: 120,
+                          width: 120,
+                          child: Card(
+                            elevation: 10,
+                            child: Column(children: [
+                              Image.asset(
+                                "images/all.png",
+                                height: 45,
+                              ),
+                              Text("All Nations "),
+                              // Text("University"),
+                              Row(
+                                children: [
+                                  SizedBox(
+                                    width: 60,
+                                  ),
+                                  Checkbox(
+                                    value: all,
+                                    onChanged: (newBool) {
+                                      setState(() {
+                                        all = newBool;
+                                      });
+                                    },
+                                  )
+                                ],
+                              )
+                            ]),
+                          ),
+                        ),
+                        Container(
+                          height: 120,
+                          width: 120,
+                          child: Card(
+                            elevation: 10,
+                            child: Column(children: [
+                              Image.asset(
+                                "images/uds.png",
+                                height: 45,
+                              ),
+                              Text("UDS"),
+                              Row(
+                                children: [
+                                  SizedBox(
+                                    width: 60,
+                                  ),
+                                  Checkbox(
+                                    value: uds,
+                                    onChanged: (newBool) {
+                                      setState(() {
+                                        uds = newBool;
+                                      });
+                                    },
+                                  )
+                                ],
+                              )
+                            ]),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        Container(
+                          child: Container(
+                            height: 120,
+                            width: 120,
+                            child: Card(
+                              elevation: 10,
+                              child: Column(children: [
+                                Image.asset(
+                                  "images/uew.png",
+                                  height: 45,
+                                ),
+                                Text("UEW"),
+                                Row(
+                                  children: [
+                                    SizedBox(
+                                      width: 60,
+                                    ),
+                                    Checkbox(
+                                      value: uew,
+                                      onChanged: (newBool) {
+                                        setState(() {
+                                          uew = newBool;
+                                        });
+                                      },
+                                    )
+                                  ],
+                                )
+                              ]),
+                            ),
+                          ),
+                        ),
+                        Container(
+                          height: 120,
+                          width: 120,
+                          child: Card(
+                            elevation: 10,
+                            child: Column(children: [
+                              Image.asset(
+                                "images/puc.webp",
+                                height: 45,
+                              ),
+                              Text("PUC"),
+                              Row(
+                                children: [
+                                  SizedBox(
+                                    width: 60,
+                                  ),
+                                  Checkbox(
+                                    value: puc,
+                                    onChanged: (newBool) {
+                                      setState(() {
+                                        puc = newBool;
+                                      });
+                                    },
+                                  )
+                                ],
+                              )
+                            ]),
+                          ),
+                        ),
+                        Container(
+                          height: 120,
+                          width: 120,
+                          child: Card(
+                            elevation: 10,
+                            child: Column(children: [
+                              Image.asset(
+                                "images/cctu.png",
+                                height: 45,
+                              ),
+                              Text("CCTU"),
+                              Row(
+                                children: [
+                                  SizedBox(
+                                    width: 60,
+                                  ),
+                                  Checkbox(
+                                    value: cctu,
+                                    onChanged: (newBool) {
+                                      setState(() {
+                                        cctu = newBool;
+                                      });
+                                    },
+                                  )
+                                ],
+                              )
+                            ]),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        Container(
+                          child: Container(
+                            height: 120,
+                            width: 120,
+                            child: Card(
+                              elevation: 10,
+                              child: Column(children: [
+                                Image.asset(
+                                  "images/vvu.png",
+                                  height: 45,
+                                ),
+                                Text("Valley View"),
+                                Row(
+                                  children: [
+                                    SizedBox(
+                                      width: 60,
+                                    ),
+                                    Checkbox(
+                                      value: vvu,
+                                      onChanged: (newBool) {
+                                        setState(() {
+                                          vvu = newBool;
+                                        });
+                                      },
+                                    )
+                                  ],
+                                )
+                              ]),
+                            ),
+                          ),
+                        ),
+                        Container(
+                          height: 120,
+                          width: 120,
+                          child: Card(
+                            elevation: 10,
+                            color: Colors.teal[2000],
+                            child: Column(children: [
+                              Image.asset(
+                                "images/upsa.png",
+                                height: 45,
+                              ),
+                              Text("UPSA"),
+                              Row(
+                                children: [
+                                  SizedBox(
+                                    width: 60,
+                                  ),
+                                  Checkbox(
+                                    value: upsa,
+                                    onChanged: (newBool) {
+                                      setState(() {
+                                        upsa = newBool;
+                                      });
+                                    },
+                                  )
+                                ],
+                              )
+                            ]),
+                          ),
+                        ),
+                        Container(
+                          height: 120,
+                          width: 120,
+                          child: Card(
+                            elevation: 10,
+                            child: Column(children: [
+                              Image.asset(
+                                "images/gij.jfif",
+                                height: 45,
+                              ),
+                              Text("GIJ"),
+                              Row(
+                                children: [
+                                  SizedBox(
+                                    width: 60,
+                                  ),
+                                  Checkbox(
+                                    value: gij,
+                                    onChanged: (newBool) {
+                                      setState(() {
+                                        gij = newBool;
+                                      });
+                                    },
+                                  )
+                                ],
+                              )
+                            ]),
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                   SizedBox(
                     height: 20,
@@ -697,6 +723,11 @@ class _AggregateState extends State<Aggregate> {
                                         uenr: uenr.toString(),
                                         actu: actu.toString(),
                                         knust: knust.toString(),
+                                        uhas: uhas.toString(),
+                                        allNations: all.toString(),
+                                        uds: uds.toString(),
+                                        puc: puc.toString(),
+                                        upsa: upsa.toString(),
                                       )));
                           //  _scaffoldkey.currentState!.showSnackBar(snackBar);
                         }
