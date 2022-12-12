@@ -2,6 +2,27 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:hexagon_app/pages/requirement.dart';
+import 'package:hexagon_app/pages/actu.dart';
+import 'package:hexagon_app/pages/allNations.dart';
+import 'package:hexagon_app/pages/Ashesi.dart';
+import 'package:hexagon_app/pages/cctu.dart';
+import 'package:hexagon_app/pages/knust.dart';
+import 'package:hexagon_app/pages/kstu.dart';
+import 'package:hexagon_app/pages/legon.dart';
+import 'package:hexagon_app/pages/puc.dart';
+import 'package:hexagon_app/pages/uccReq.dart';
+import 'package:hexagon_app/pages/uds.dart';
+import 'package:hexagon_app/pages/Uenr.dart';
+import 'package:hexagon_app/pages/uhas.dart';
+import 'package:hexagon_app/pages/umatReq.dart';
+import 'package:hexagon_app/pages/vvu.dart';
+import 'package:hexagon_app/pages/upsaReq.dart';
+
+
+
+
+
+
 
 class Courses extends StatefulWidget {
   String grade;
@@ -68,9 +89,9 @@ class _CoursesState extends State<Courses> {
                 Uhas(widget.grade, widget.uhas),
                 AllNations(widget.grade, widget.allNations),
                 Uds(widget.grade, widget.uds),
-                Puc(widget.grade, widget.puc),
-                Upsa(widget.grade, widget.upsa),
-                Vvu(widget.grade, widget.vvu),
+                Pc(widget.grade, widget.puc),
+                Ups(widget.grade, widget.upsa),
+                Vu(widget.grade, widget.vvu),
 
                 // Text("School: ${isChecked}"),
               ],
@@ -2920,7 +2941,7 @@ class _CoursesState extends State<Courses> {
   }
 
 //vvu
-  Container Vvu(String? grade1, String school1) {
+  Container Vu(String? grade1, String school1) {
     var g = int.parse(widget.grade);
 
     if (g <= 7 && school1 == "true") {
@@ -5758,7 +5779,7 @@ class _CoursesState extends State<Courses> {
   }
 
   //Puc
-  Container Puc(String? grade1, String school1) {
+  Container Pc(String? grade1, String school1) {
     var g = int.parse(widget.grade);
 
     if (g <= 7 && school1 == "true") {
@@ -8596,7 +8617,7 @@ class _CoursesState extends State<Courses> {
     }
   }
 //Upsa
-  Container Upsa(String? grade1, String school1) {
+  Container Ups(String? grade1, String school1) {
     var g = int.parse(widget.grade);
 
     if (g <= 7 && school1 == "true") {
