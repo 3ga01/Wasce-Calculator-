@@ -419,10 +419,13 @@ class _CoursesState extends State<Courses> {
 				Navigator.push(context,
                     MaterialPageRoute(builder: (context) => Requirement()));
               },
-                child: Text("Check Entry Requirements", 
+                child: Text("Check Entry Requirements",
+				
                 style:TextStyle(
                   fontSize:20,
-                  color:Colors.amber
+                  color:Colors.amber,
+                
+				  
                   
                 ))),
                    
@@ -740,6 +743,20 @@ class _CoursesState extends State<Courses> {
                     ],
                   ),
                 ),
+				 GestureDetector(onTap:(){
+				Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Requirement()));
+              },
+                child: Text("Check Entry Requirements",
+				
+                style:TextStyle(
+                  fontSize:20,
+                  color:Colors.amber,
+                
+
+                  
+                ))),
+               
               ],
             ),
           ),
@@ -1040,6 +1057,20 @@ class _CoursesState extends State<Courses> {
                     ],
                   ),
                 ),
+				 GestureDetector(onTap:(){
+				Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Requirement()));
+              },
+                child: Text("Check Entry Requirements",
+				
+                style:TextStyle(
+                  fontSize:20,
+                  color:Colors.amber,
+                
+				  
+                  
+                ))),
+               
               ],
             ),
           ),
@@ -1332,6 +1363,20 @@ class _CoursesState extends State<Courses> {
                     ],
                   ),
                 ),
+				 GestureDetector(onTap:(){
+				Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Requirement()));
+              },
+                child: Text("Check Entry Requirements",
+				
+                style:TextStyle(
+                  fontSize:20,
+                  color:Colors.amber,
+                
+				  
+                  
+                ))),
+               
               ],
             ),
           ),
@@ -1605,6 +1650,20 @@ class _CoursesState extends State<Courses> {
                     ],
                   ),
                 ),
+				 GestureDetector(onTap:(){
+				Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Requirement()));
+              },
+                child: Text("Check Entry Requirements",
+				
+                style:TextStyle(
+                  fontSize:20,
+                  color:Colors.amber,
+                
+				  
+                  
+                ))),
+               
               ],
             ),
           ),
@@ -1892,6 +1951,20 @@ class _CoursesState extends State<Courses> {
                     ],
                   ),
                 ),
+				 GestureDetector(onTap:(){
+				Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Requirement()));
+              },
+                child: Text("Check Entry Requirements",
+				
+                style:TextStyle(
+                  fontSize:20,
+                  color:Colors.amber,
+                
+				  
+                  
+                ))),
+               
               ],
             ),
           ),
@@ -2144,6 +2217,20 @@ class _CoursesState extends State<Courses> {
                     ],
                   ),
                 ),
+				 GestureDetector(onTap:(){
+				Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Requirement()));
+              },
+                child: Text("Check Entry Requirements",
+				
+                style:TextStyle(
+                  fontSize:20,
+                  color:Colors.amber,
+                
+				  
+                  
+                ))),
+               
               ],
             ),
           ),
@@ -2365,6 +2452,20 @@ class _CoursesState extends State<Courses> {
                     ],
                   ),
                 ),
+				 GestureDetector(onTap:(){
+				Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Requirement()));
+              },
+                child: Text("Check Entry Requirements",
+				
+                style:TextStyle(
+                  fontSize:20,
+                  color:Colors.amber,
+                
+				  
+                  
+                ))),
+               
               ],
             ),
           ),
@@ -2585,6 +2686,20 @@ class _CoursesState extends State<Courses> {
                     ],
                   ),
                 ),
+				 GestureDetector(onTap:(){
+				Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Requirement()));
+              },
+                child: Text("Check Entry Requirements",
+				
+                style:TextStyle(
+                  fontSize:20,
+                  color:Colors.amber,
+                
+				  
+                  
+                ))),
+               
               ],
             ),
           ),
@@ -2778,6 +2893,20 @@ class _CoursesState extends State<Courses> {
                     ],
                   ),
                 ),
+				 GestureDetector(onTap:(){
+				Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Requirement()));
+              },
+                child: Text("Check Entry Requirements",
+				
+                style:TextStyle(
+                  fontSize:20,
+                  color:Colors.amber,
+                
+				  
+                  
+                ))),
+               
               ],
             ),
           ),
@@ -2785,8 +2914,7 @@ class _CoursesState extends State<Courses> {
       );
     } else {
       return Container(
-        height: 20,
-        width: 50,
+        
       );
     }
   }
@@ -3124,6 +3252,20 @@ class _CoursesState extends State<Courses> {
                     ],
                   ),
                 ),
+				GestureDetector(onTap:(){
+				Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Vvu()));
+              },
+                child: Text("Check Entry Requirements",
+				
+                style:TextStyle(
+                  fontSize:20,
+                  color:Colors.amber,
+                
+				  
+                  
+                ))),
+                
               ],
             ),
           ),
@@ -3438,6 +3580,20 @@ class _CoursesState extends State<Courses> {
                     ],
                   ),
                 ),
+				GestureDetector(onTap:(){
+				Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Vvu()));
+              },
+                child: Text("Check Entry Requirements",
+				
+                style:TextStyle(
+                  fontSize:20,
+                  color:Colors.amber,
+                
+				  
+                  
+                ))),
+                
               ],
             ),
           ),
@@ -3738,6 +3894,20 @@ class _CoursesState extends State<Courses> {
                     ],
                   ),
                 ),
+				GestureDetector(onTap:(){
+				Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Vvu()));
+              },
+                child: Text("Check Entry Requirements",
+				
+                style:TextStyle(
+                  fontSize:20,
+                  color:Colors.amber,
+                
+				  
+                  
+                ))),
+                
               ],
             ),
           ),
@@ -4030,6 +4200,20 @@ class _CoursesState extends State<Courses> {
                     ],
                   ),
                 ),
+				GestureDetector(onTap:(){
+				Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Vvu()));
+              },
+                child: Text("Check Entry Requirements",
+				
+                style:TextStyle(
+                  fontSize:20,
+                  color:Colors.amber,
+                
+				  
+                  
+                ))),
+                
               ],
             ),
           ),
@@ -4303,6 +4487,20 @@ class _CoursesState extends State<Courses> {
                     ],
                   ),
                 ),
+				GestureDetector(onTap:(){
+				Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Vvu()));
+              },
+                child: Text("Check Entry Requirements",
+				
+                style:TextStyle(
+                  fontSize:20,
+                  color:Colors.amber,
+                
+				  
+                  
+                ))),
+                
               ],
             ),
           ),
@@ -4590,6 +4788,20 @@ class _CoursesState extends State<Courses> {
                     ],
                   ),
                 ),
+				GestureDetector(onTap:(){
+				Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Vvu()));
+              },
+                child: Text("Check Entry Requirements",
+				
+                style:TextStyle(
+                  fontSize:20,
+                  color:Colors.amber,
+                
+				  
+                  
+                ))),
+                
               ],
             ),
           ),
@@ -4842,6 +5054,20 @@ class _CoursesState extends State<Courses> {
                     ],
                   ),
                 ),
+				GestureDetector(onTap:(){
+				Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Vvu()));
+              },
+                child: Text("Check Entry Requirements",
+				
+                style:TextStyle(
+                  fontSize:20,
+                  color:Colors.amber,
+                
+				  
+                  
+                ))),
+                
               ],
             ),
           ),
@@ -5063,6 +5289,20 @@ class _CoursesState extends State<Courses> {
                     ],
                   ),
                 ),
+				GestureDetector(onTap:(){
+				Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Vvu()));
+              },
+                child: Text("Check Entry Requirements",
+				
+                style:TextStyle(
+                  fontSize:20,
+                  color:Colors.amber,
+                
+				  
+                  
+                ))),
+                
               ],
             ),
           ),
@@ -5283,6 +5523,20 @@ class _CoursesState extends State<Courses> {
                     ],
                   ),
                 ),
+				GestureDetector(onTap:(){
+				Navigator.push(context,
+                    MaterialPageRoute(builder: (context) =>Vvu()));
+              },
+                child: Text("Check Entry Requirements",
+				
+                style:TextStyle(
+                  fontSize:20,
+                  color:Colors.amber,
+                
+				  
+                  
+                ))),
+                
               ],
             ),
           ),
@@ -5476,6 +5730,20 @@ class _CoursesState extends State<Courses> {
                     ],
                   ),
                 ),
+				GestureDetector(onTap:(){
+				Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Vvu()));
+              },
+                child: Text("Check Entry Requirements",
+				
+                style:TextStyle(
+                  fontSize:20,
+                  color:Colors.amber,
+                
+				  
+                  
+                ))),
+                
               ],
             ),
           ),
@@ -5822,6 +6090,20 @@ class _CoursesState extends State<Courses> {
                     ],
                   ),
                 ),
+				GestureDetector(onTap:(){
+				Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Puc()));
+              },
+                child: Text("Check Entry Requirements",
+				
+                style:TextStyle(
+                  fontSize:20,
+                  color:Colors.amber,
+                
+				  
+                  
+                ))),
+                
               ],
             ),
           ),
@@ -6136,6 +6418,20 @@ class _CoursesState extends State<Courses> {
                     ],
                   ),
                 ),
+				GestureDetector(onTap:(){
+				Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Puc()));
+              },
+                child: Text("Check Entry Requirements",
+				
+                style:TextStyle(
+                  fontSize:20,
+                  color:Colors.amber,
+                
+				  
+                  
+                ))),
+                
               ],
             ),
           ),
@@ -6436,6 +6732,20 @@ class _CoursesState extends State<Courses> {
                     ],
                   ),
                 ),
+				GestureDetector(onTap:(){
+				Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Puc()));
+              },
+                child: Text("Check Entry Requirements",
+				
+                style:TextStyle(
+                  fontSize:20,
+                  color:Colors.amber,
+                
+				  
+                  
+                ))),
+                
               ],
             ),
           ),
@@ -6728,6 +7038,20 @@ class _CoursesState extends State<Courses> {
                     ],
                   ),
                 ),
+				GestureDetector(onTap:(){
+				Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Puc()));
+              },
+                child: Text("Check Entry Requirements",
+				
+                style:TextStyle(
+                  fontSize:20,
+                  color:Colors.amber,
+                
+				  
+                  
+                ))),
+                
               ],
             ),
           ),
@@ -7001,6 +7325,20 @@ class _CoursesState extends State<Courses> {
                     ],
                   ),
                 ),
+				GestureDetector(onTap:(){
+				Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Puc()));
+              },
+                child: Text("Check Entry Requirements",
+				
+                style:TextStyle(
+                  fontSize:20,
+                  color:Colors.amber,
+                
+				  
+                  
+                ))),
+                
               ],
             ),
           ),
@@ -7288,7 +7626,22 @@ class _CoursesState extends State<Courses> {
                     ],
                   ),
                 ),
+				GestureDetector(onTap:(){
+				Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Puc()));
+              },
+                child: Text("Check Entry Requirements",
+				
+                style:TextStyle(
+                  fontSize:20,
+                  color:Colors.amber,
+                
+				  
+                  
+                ))),
+                
               ],
+			  
             ),
           ),
         ),
@@ -7540,6 +7893,20 @@ class _CoursesState extends State<Courses> {
                     ],
                   ),
                 ),
+				GestureDetector(onTap:(){
+				Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Puc()));
+              },
+                child: Text("Check Entry Requirements",
+				
+                style:TextStyle(
+                  fontSize:20,
+                  color:Colors.amber,
+                
+				  
+                  
+                ))),
+                
               ],
             ),
           ),
@@ -7761,6 +8128,20 @@ class _CoursesState extends State<Courses> {
                     ],
                   ),
                 ),
+				GestureDetector(onTap:(){
+				Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Puc()));
+              },
+                child: Text("Check Entry Requirements",
+				
+                style:TextStyle(
+                  fontSize:20,
+                  color:Colors.amber,
+                
+				  
+                  
+                ))),
+                
               ],
             ),
           ),
@@ -7981,6 +8362,20 @@ class _CoursesState extends State<Courses> {
                     ],
                   ),
                 ),
+				GestureDetector(onTap:(){
+				Navigator.push(context,
+                    MaterialPageRoute(builder: (context) =>Puc()));
+              },
+                child: Text("Check Entry Requirements",
+				
+                style:TextStyle(
+                  fontSize:20,
+                  color:Colors.amber,
+                
+				  
+                  
+                ))),
+                
               ],
             ),
           ),
@@ -8174,6 +8569,20 @@ class _CoursesState extends State<Courses> {
                     ],
                   ),
                 ),
+				GestureDetector(onTap:(){
+				Navigator.push(context,
+                    MaterialPageRoute(builder: (context) =>Puc()));
+              },
+                child: Text("Check Entry Requirements",
+				
+                style:TextStyle(
+                  fontSize:20,
+                  color:Colors.amber,
+                
+				  
+                  
+                ))),
+                
               ],
             ),
           ),
@@ -8186,7 +8595,7 @@ class _CoursesState extends State<Courses> {
       );
     }
   }
-
+//Upsa
   Container Upsa(String? grade1, String school1) {
     var g = int.parse(widget.grade);
 
@@ -8519,6 +8928,20 @@ class _CoursesState extends State<Courses> {
                     ],
                   ),
                 ),
+				GestureDetector(onTap:(){
+				Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Upsa()));
+              },
+                child: Text("Check Entry Requirements",
+				
+                style:TextStyle(
+                  fontSize:20,
+                  color:Colors.amber,
+                
+				  
+                  
+                ))),
+                
               ],
             ),
           ),
@@ -8833,6 +9256,20 @@ class _CoursesState extends State<Courses> {
                     ],
                   ),
                 ),
+				GestureDetector(onTap:(){
+				Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Upsa()));
+              },
+                child: Text("Check Entry Requirements",
+				
+                style:TextStyle(
+                  fontSize:20,
+                  color:Colors.amber,
+                
+				  
+                  
+                ))),
+                
               ],
             ),
           ),
@@ -9133,6 +9570,20 @@ class _CoursesState extends State<Courses> {
                     ],
                   ),
                 ),
+				GestureDetector(onTap:(){
+				Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Upsa()));
+              },
+                child: Text("Check Entry Requirements",
+				
+                style:TextStyle(
+                  fontSize:20,
+                  color:Colors.amber,
+                
+				  
+                  
+                ))),
+                
               ],
             ),
           ),
@@ -9425,6 +9876,20 @@ class _CoursesState extends State<Courses> {
                     ],
                   ),
                 ),
+				GestureDetector(onTap:(){
+				Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Upsa()));
+              },
+                child: Text("Check Entry Requirements",
+				
+                style:TextStyle(
+                  fontSize:20,
+                  color:Colors.amber,
+                
+				  
+                  
+                ))),
+                
               ],
             ),
           ),
@@ -9698,6 +10163,20 @@ class _CoursesState extends State<Courses> {
                     ],
                   ),
                 ),
+				GestureDetector(onTap:(){
+				Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Upsa()));
+              },
+                child: Text("Check Entry Requirements",
+				
+                style:TextStyle(
+                  fontSize:20,
+                  color:Colors.amber,
+                
+				  
+                  
+                ))),
+                
               ],
             ),
           ),
@@ -9985,6 +10464,20 @@ class _CoursesState extends State<Courses> {
                     ],
                   ),
                 ),
+				GestureDetector(onTap:(){
+				Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Upsa()));
+              },
+                child: Text("Check Entry Requirements",
+				
+                style:TextStyle(
+                  fontSize:20,
+                  color:Colors.amber,
+                
+				  
+                  
+                ))),
+                
               ],
             ),
           ),
@@ -10237,6 +10730,20 @@ class _CoursesState extends State<Courses> {
                     ],
                   ),
                 ),
+				GestureDetector(onTap:(){
+				Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Upsa()));
+              },
+                child: Text("Check Entry Requirements",
+				
+                style:TextStyle(
+                  fontSize:20,
+                  color:Colors.amber,
+                
+				  
+                  
+                ))),
+                
               ],
             ),
           ),
@@ -10458,6 +10965,20 @@ class _CoursesState extends State<Courses> {
                     ],
                   ),
                 ),
+				GestureDetector(onTap:(){
+				Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Upsa()));
+              },
+                child: Text("Check Entry Requirements",
+				
+                style:TextStyle(
+                  fontSize:20,
+                  color:Colors.amber,
+                
+				  
+                  
+                ))),
+                
               ],
             ),
           ),
@@ -10678,6 +11199,20 @@ class _CoursesState extends State<Courses> {
                     ],
                   ),
                 ),
+				GestureDetector(onTap:(){
+				Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Upsa()));
+              },
+                child: Text("Check Entry Requirements",
+				
+                style:TextStyle(
+                  fontSize:20,
+                  color:Colors.amber,
+                
+				  
+                  
+                ))),
+                
               ],
             ),
           ),
@@ -10871,6 +11406,20 @@ class _CoursesState extends State<Courses> {
                     ],
                   ),
                 ),
+				GestureDetector(onTap:(){
+				Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Upsa()));
+              },
+                child: Text("Check Entry Requirements",
+				
+                style:TextStyle(
+                  fontSize:20,
+                  color:Colors.amber,
+                
+				  
+                  
+                ))),
+                
               ],
             ),
           ),
@@ -11113,6 +11662,20 @@ class _CoursesState extends State<Courses> {
                     ],
                   ),
                 ),
+				GestureDetector(onTap:(){
+				Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => UmatReq()));
+              },
+                child: Text("Check Entry Requirements",
+				
+                style:TextStyle(
+                  fontSize:20,
+                  color:Colors.amber,
+                
+				  
+                  
+                ))),
+                
               ],
             ),
           ),
@@ -11340,6 +11903,20 @@ class _CoursesState extends State<Courses> {
                     ],
                   ),
                 ),
+				GestureDetector(onTap:(){
+				Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => UmatReq()));
+              },
+                child: Text("Check Entry Requirements",
+				
+                style:TextStyle(
+                  fontSize:20,
+                  color:Colors.amber,
+                
+				  
+                  
+                ))),
+                
               ],
             ),
           ),
@@ -11545,6 +12122,20 @@ class _CoursesState extends State<Courses> {
                     ],
                   ),
                 ),
+				GestureDetector(onTap:(){
+				Navigator.push(context,
+                    MaterialPageRoute(builder: (context) =>UmatReq()));
+              },
+                child: Text("Check Entry Requirements",
+				
+                style:TextStyle(
+                  fontSize:20,
+                  color:Colors.amber,
+                
+				  
+                  
+                ))),
+                
               ],
             ),
           ),
