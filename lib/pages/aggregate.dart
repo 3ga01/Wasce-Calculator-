@@ -1,7 +1,9 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:hexagon_app/pages/courses.dart';
+import 'package:hexagon_app/pages/requirement.dart';
 
 class Aggregate extends StatefulWidget {
   Aggregate({super.key});
@@ -86,7 +88,8 @@ class _AggregateState extends State<Aggregate> {
                             !all! &&
                             !uds! &&
                             !puc! &&
-                            !upsa!) {
+                            !upsa! &&
+                            !vvu!) {
                           return "Pls Select a School";
                         } else {
                           return null;
@@ -97,15 +100,8 @@ class _AggregateState extends State<Aggregate> {
                   SizedBox(
                     height: 40,
                   ),
-                  Center(
-                    child: Text(
-                      "Select School",
-                      style: TextStyle(
-                        fontSize: 28,
-                        wordSpacing: 5,
-                      ),
-                    ),
-                  ),
+                  Center(child: Text("Select School",
+                  style: TextStyle(fontSize: 30),)),
                   SizedBox(
                     height: 40,
                   ),
@@ -728,6 +724,7 @@ class _AggregateState extends State<Aggregate> {
                                         uds: uds.toString(),
                                         puc: puc.toString(),
                                         upsa: upsa.toString(),
+                                        vvu: vvu.toString(),
                                       )));
                           //  _scaffoldkey.currentState!.showSnackBar(snackBar);
                         }
